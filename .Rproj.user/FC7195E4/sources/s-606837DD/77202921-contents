@@ -15,9 +15,9 @@ book:
   downloads: [pdf, epub]
   chapters:
     - index.qmd
-    - intro.qmd
-    - privacy.qmd
-    - summary.qmd
+    - 01-overview.qmd
+    - 02-spatial_data.qmd
+    - 03-data_wrangling.qmd
     - references.qmd
 
   description-meta: |
