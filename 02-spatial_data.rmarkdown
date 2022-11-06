@@ -22,6 +22,7 @@ In this course, we cover analytical and modelling approaches for point, lattice/
 
 The hierarchical organisation is a key feature of spatial data. Smaller geographical units are organised within larger geographical units. You can find the hierarchical representation of UK Statistical Geographies on the [Office for National Statistics website](https://geoportal.statistics.gov.uk/search?collection=Document&sort=name&tags=all(DOC_HRSG%2CDEC_2020)). In the bottom part of the output below, we can observe a spatial data frame for Liverpool displaying the hierarchical structure of census data (from the smallest to the largest): Output Areas (OAs), Lower Super Output Areas (LSOAs), Middle Super Output Areas (MSOAs) and Local Authority Districts (LADs). This hierarchical structure entails that units in smaller geographies are nested within units in larger geographies, and that smaller units can be aggregated to produce large units.
 
+
 ```{r, echo=FALSE, warning=FALSE, message=FALSE, results="hide"}
 library(sf)
 oa_shp <- st_read("data/census/Liverpool_OA.shp")
@@ -30,6 +31,7 @@ oa_shp <- st_read("data/census/Liverpool_OA.shp")
 ```{r, echo=FALSE}
 head(oa_shp[,1:4])
 ```
+
 
 Next we quickly go through the components of the output above. The first line indicates the type of feature and the number of rows (features) and columns (fields) in the data frame, except for the geometry. The second and third lines identify the type of geometry and dimension. The fourth line `bbox` stands for bounding box and display the min and max coordinates containing the Liverpool area in the data frame. The fifth line `projected CRS` indicates the coordinate reference system projection. If you would like to learn more about the various components of spatial data frames, please see the *R* `sf` package vignette on [Simple Features](https://r-spatial.github.io/sf/articles/sf1.html).
 
@@ -66,3 +68,4 @@ Spatial heterogeneity refers to the uneven distribution of a variable's values a
 ### Spatial nonstationarity
 
 Spatial nonstationarity refers to variations in the relationship between an outcome variable and a set of predictor variables across space. In a modelling context, it relates to a situation in which a simple "global" model is inappropriate to explain the relationships between a set of variables. The geographical nature of the model must be modified to reflect local structural relationships within the data. For example, ethnic segregation has been positively associated with employment outcomes in some countries pointing to networks in pre-existing communities facilitating access to the local labour market. Inversely ethnic segregation has been negatively associated with employment outcomes pointing to lack of integration into the broader local community. We illustrate various modelling approaches to capture spatial nonstationarity in Chapters \@ref(mlm2) and \@ref(gwr).
+
