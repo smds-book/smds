@@ -4,14 +4,7 @@
     "href": "index.html",
     "title": "Spatial Modelling for Data Scientists",
     "section": "",
-    "text": "This is the new website for the course Spatial Modeling for Data Scientists taught by Dr. Francisco Rowe at the University of Liverpool, United Kingdom. The website is work in progress and will be fully updated by February 1st 2023. The course provides an intuitive understanding of models and analytical approaches to manipulate, visualise and interrogate spatial data.\nThe website is licensed under the Attribution-NonCommercial-NoDerivatives 4.0 International License. A compilation of this web course is hosted as a GitHub repository that you can access:"
-  },
-  {
-    "objectID": "index.html#contact",
-    "href": "index.html#contact",
-    "title": "Spatial Modelling for Data Scientists",
-    "section": "Contact",
-    "text": "Contact\n\nFrancisco Rowe - F.Rowe-Gonzalez [at] liverpool.ac.uk\nSenior Lecturer in Quantitative Human Geography\nOffice 507, Roxby Building,\nUniversity of Liverpool - 74 Bedford St S,\nLiverpool, L69 7ZT,\nUnited Kingdom."
+    "text": "Welcome\nThis is the new website for the book Spatial Modeling for Data Scientists written by Professor Francisco Rowe and Professor Dani Arribas-Bel at the University of Liverpool, United Kingdom. The website is work in progress and will be regularly updated during 2023."
   },
   {
     "objectID": "01-overview.html#aims",

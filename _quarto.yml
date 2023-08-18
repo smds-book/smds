@@ -22,8 +22,8 @@ book:
 
   page-footer:
     left: |
-      All content licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) <br> &copy; Francisco Rowe, Dani Arribas-Bel.
-    center: "[Website]() | [GitHub](https://github.com/fcorowe/smds)"
+      All content licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) <br> &copy; [Francisco Rowe](https://www.franciscorowe.com), [Dani Arribas-Bel](https://darribas.org).
+    center: "[Website](https://fcorowe.github.io/smds/) | [GitHub](https://github.com/fcorowe/smds)"
     right: Built with [Quarto](https://quarto.org/).
     background: "#f8f9fa"
 
