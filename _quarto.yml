@@ -16,7 +16,7 @@ book:
 
   sidebar:
     style: docked
-    background: light
+    background: "#ffffff"
   date: "today"
   date-format: long
 
@@ -92,21 +92,21 @@ format:
       text: |
         \printindex
 
-  latex-auto-install: true
+#  latex-auto-install: true
 
- knitr:
-   opts_chunk:
-     cache: true
-     cache.lazy: false
-     dpi: 600
-     fig.width: 5.5
-     fig.height: 3
-     out.width: "100%"
-     split: true
-     R.options:
-      knitr.graphics.auto_pdf: true
-      datatable.print.nrows: 10
-      datatable.print.class: false
-      datatable.print.keys: false
-      datatable.print.trunc.cols: TRUE
+ # knitr:
+ #   opts_chunk:
+ #     cache: true
+ #     cache.lazy: false
+ #     dpi: 600
+ #     fig.width: 5.5
+ #     fig.height: 3
+ #     out.width: "100%"
+ #     split: true
+ #     R.options:
+ #      knitr.graphics.auto_pdf: true
+ #      datatable.print.nrows: 10
+ #      datatable.print.class: false
+ #      datatable.print.keys: false
+ #      datatable.print.trunc.cols: TRUE
 
