@@ -3,26 +3,41 @@ project:
   output-dir: docs
 
 book:
-  title-block-banner: true
-  cover-image: cover.png
   title: "Spatial Modelling for Data Scientists"
   author: "Francisco Rowe, Dani Arribas-Bel"
+  reader-mode: true
   search: true
+  repo-url: https://github.com/fcorowe/smds
+  repo-actions:  [edit, issue, source]
+  repo-subdir: book
+  favicon: figs/cover/cover.ico
+  cover-image: figs/cover/cover.png
+  downloads: [pdf]
+
   sidebar:
     style: docked
     background: light
   date: "today"
   date-format: long
-  downloads: [pdf, epub]
+
+  page-footer:
+    left: |
+      All content licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) <br> &copy; Francisco Rowe, Dani Arribas-Bel.
+    center: "[Website]() | [GitHub](https://github.com/fcorowe/smds)"
+    right: Built with [Quarto](https://quarto.org/).
+    background: "#f8f9fa"
+
   chapters:
     - index.qmd
-    - 01-overview.qmd
-    - 02-spatial_data.qmd
-    - 03-data_wrangling.qmd
+    - part: "Part 1"
+      chapters:
+      - 01-overview.qmd
+      - 02-spatial_data.qmd
+    - part: "Part 2"
+      chapters:
+      - 03-data_wrangling.qmd
+   # appendices:
     - references.qmd
-
-  description-meta: |
-    This book will...
 
   sharing: [twitter, facebook]
   twitter-card:
@@ -32,9 +47,66 @@ bibliography: references.bib
 
 format:
   html:
-    theme: cosmo
-  pdf:
-    documentclass: scrreprt
+    theme:
+      light: [default, style/custom.scss]
+    fontsize: "15px"
+    linestretch: 1.6
+    mainfont: "Roboto"
+    monofont: "Fira Mono"
+    smooth-scroll: true
+    toc-depth: 3
+    code-link: true
+    code-tools:
+      toggle: true
+    code-fold: false
+    highlight-style: printing
+    code-block-bg: true
+    code-overflow: wrap
+    reference-location: margin
+    mermaid:
+      theme: neutral
 
-editor: visual
+  pdf:
+    documentclass: style/krantz
+    classoption: krantz2
+    lof: false
+    lot: false
+    toc: false
+    toc-depth: 2
+    fig-cap-location: bottom
+    tbl-cap-location: top
+    urlcolor: "blue"
+    linkcolor: "black"
+    biblio-style: apalike
+    keep-tex: true
+    code-block-bg: "#f2f2f2"
+    code-block-border-left: "#f2f2f2"
+    code-overflow: wrap
+    mermaid:
+      theme: neutral
+    include-in-header:
+      text: |
+        \usepackage{makeidx}
+        \makeindex
+    include-after-body:
+      text: |
+        \printindex
+
+  latex-auto-install: true
+
+ knitr:
+   opts_chunk:
+     cache: true
+     cache.lazy: false
+     dpi: 600
+     fig.width: 5.5
+     fig.height: 3
+     out.width: "100%"
+     split: true
+     R.options:
+      knitr.graphics.auto_pdf: true
+      datatable.print.nrows: 10
+      datatable.print.class: false
+      datatable.print.keys: false
+      datatable.print.trunc.cols: TRUE
 
