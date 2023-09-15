@@ -1,0 +1,5 @@
+# Preamble
+
+Vision of the book 
+    - Focus on intuition and application of spatial data analysis and modelling
+    - Fit into the broader ecosystem
