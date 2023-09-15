@@ -1,18 +1,4 @@
----
-title: Spatial dependence
-jupyter:
-  jupytext:
-    text_representation:
-      extension: .qmd
-      format_name: quarto
-      format_version: '1.0'
-      jupytext_version: 1.14.5
-  kernelspec:
-    display_name: R
-    language: R
-    name: ir
----
-
+# Spatial dependence
 
 This chapter is based on the following references, which are good follow-up's on the topic:
 

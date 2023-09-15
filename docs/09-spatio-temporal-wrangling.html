@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.2.280">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<title>Spatial Modelling for Data Scientists - 10&nbsp; Spatiotemporal wrangling</title>
+<title>Spatial Modelling for Data Scientists - 10&nbsp; Space-time wrangling</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -139,7 +139,7 @@ div.csl-indent {
   }
 }</script><style>html{ scroll-behavior: smooth; }</style>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-<meta name="twitter:title" content="Spatial Modelling for Data Scientists - 10&nbsp; Spatiotemporal wrangling">
+<meta name="twitter:title" content="Spatial Modelling for Data Scientists - 10&nbsp; Space-time wrangling">
 <meta name="twitter:description" content="This chapter provides an introduction to the complexities of spatio-temporal data and modelling.">
 <meta name="twitter:creator" content="@fcorowe">
 <meta name="twitter:card" content="summary">
@@ -149,7 +149,7 @@ div.csl-indent {
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }"><div class="container-fluid d-flex justify-content-between">
       <h1 class="quarto-secondary-nav-title">
-<span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Spatiotemporal wrangling</span>
+<span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Space-time wrangling</span>
 </h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
@@ -232,7 +232,7 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./03-points.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Point data analysis</span></a>
+  <a href="./03-points.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Point patterns</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -267,7 +267,7 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./08-weighted-regression-modelling.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Geographically weighted regression modelling</span></a>
+  <a href="./08-weighted-regression-modelling.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Geographically weighted regression</span></a>
   </div>
 </li>
       </ul>
@@ -282,12 +282,12 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./09-spatio-temporal-wrangling.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Spatiotemporal wrangling</span></a>
+  <a href="./09-spatio-temporal-wrangling.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Space-time wrangling</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./10-spatio-temporal-modelling.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Spatiotemporal modelling</span></a>
+  <a href="./10-spatio-temporal-modelling.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Space-time modelling</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -347,7 +347,7 @@ div.csl-indent {
 <!-- main -->
 <main class="content page-columns page-full" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
 <div class="quarto-title-block"><div><h1 class="title d-none d-lg-block">
-<span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Spatiotemporal wrangling</span>
+<span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Space-time wrangling</span>
 </h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
 </div>
 
@@ -676,7 +676,7 @@ Please use legend.outside.size to control the width of the outside legend</code>
 <div class="sourceCode" id="cb22"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co">#tmap_mode("view")</span></span>
 <span><span class="co">#imap</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>Alternative data visualisation tools are animations, telliscope and shiny. Animations can be constructed by plotting spatial data frame-by-frame, and then stringing them together in sequence. A useful R packages <code>gganimate</code> and <code>tmap</code>! See <span class="citation" data-cites="lovelace2019">(<a href="references.html#ref-lovelace2019" role="doc-biblioref"><strong>lovelace2019?</strong></a>)</span>. Note that the creation of animations may require external dependencies; hence, they have been included here. Both <code>telliscope</code> and <code>shiny</code> are useful ways for visualising large spatio-temporal data sets in an interactive ways. Some effort is required to deploy these tools.</p>
+<p>Alternative data visualisation tools are animations, telliscope and shiny. Animations can be constructed by plotting spatial data frame-by-frame, and then stringing them together in sequence. A useful R packages <code>gganimate</code> and <code>tmap</code>! See <span class="citation" data-cites="lovelace2019">Lovelace, Nowosad, and Muenchow (<a href="references.html#ref-lovelace2019" role="doc-biblioref">2019</a>)</span>. Note that the creation of animations may require external dependencies; hence, they have been included here. Both <code>telliscope</code> and <code>shiny</code> are useful ways for visualising large spatio-temporal data sets in an interactive ways. Some effort is required to deploy these tools.</p>
 </section></section><section id="exploratory-analysis" class="level3" data-number="10.5.2"><h3 data-number="10.5.2" class="anchored" data-anchor-id="exploratory-analysis">
 <span class="header-section-number">10.5.2</span> Exploratory Analysis</h3>
 <p>In addition to visualising data, we often want to obtain numerical summaries of the data. Again, innovative ways to reduce the inherent dimensionality of the data and examine dependence structures and potential relationships in time and space are needed. We consider visualisations of empirical spatial and temporal means, dependence structures and some basic time-series analysis.</p>
@@ -1192,6 +1192,9 @@ Gabadinho, Alexis, Gilbert Ritschard, Matthias Studer, and Nicolas S Müller. 20
 <div id="ref-hyndman2018forecasting" class="csl-entry" role="doc-biblioentry">
 Hyndman, Rob J, and George Athanasopoulos. 2018. <em>Forecasting: Principles and Practice</em>. OTexts.
 </div>
+<div id="ref-lovelace2019" class="csl-entry" role="doc-biblioentry">
+Lovelace, Robin, Jakub Nowosad, and Jannes Muenchow. 2019. <em>Geocomputation with r</em>. Chapman; Hall/CRC. <a href="https://doi.org/10.1201/9780203730058">https://doi.org/10.1201/9780203730058</a>.
+</div>
 <div id="ref-pebesma2012spacetime" class="csl-entry" role="doc-biblioentry">
 Pebesma, Edzer et al. 2012. <span>“Spacetime: Spatio-Temporal Data in r.”</span> <em>Journal of Statistical Software</em> 51 (7): 1–30.
 </div>
@@ -1387,16 +1390,16 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script><nav class="page-navigation"><div class="nav-page nav-page-previous">
       <a href="./08-weighted-regression-modelling.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Geographically weighted regression modelling</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Geographically weighted regression</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./10-spatio-temporal-modelling.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Spatiotemporal modelling</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Space-time modelling</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="sourceCode" id="cb48" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Spatiotemporal wrangling</span></span>
+<div class="sourceCode" id="cb48" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Space-time wrangling</span></span>
 <span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb48-3"><a href="#cb48-3" aria-hidden="true" tabindex="-1"></a>This chapter provides an introduction to the complexities of spatio-temporal data and modelling. For modelling, we consider the Fixed Rank Kriging (FRK) framework developed by @cressie2008fixed. It enables constructing a spatial random effects model on a discretised spatial domain. Key advantages of this approach comprise the capacity to: (1) work with large data sets, (2) be scaled up; (3) generate predictions based on sparse linear algebraic techniques, and (4) produce fine-scale resolution uncertainty estimates.</span>
 <span id="cb48-4"><a href="#cb48-4" aria-hidden="true" tabindex="-1"></a></span>

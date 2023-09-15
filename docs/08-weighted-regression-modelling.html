@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.2.280">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<title>Spatial Modelling for Data Scientists - 9&nbsp; Geographically weighted regression modelling</title>
+<title>Spatial Modelling for Data Scientists - 9&nbsp; Geographically weighted regression</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -139,7 +139,7 @@ div.csl-indent {
   }
 }</script><style>html{ scroll-behavior: smooth; }</style>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-<meta name="twitter:title" content="Spatial Modelling for Data Scientists - 9&nbsp; Geographically weighted regression modelling">
+<meta name="twitter:title" content="Spatial Modelling for Data Scientists - 9&nbsp; Geographically weighted regression">
 <meta name="twitter:description" content="This chapter provides an introduction to geographically weighted regression models.">
 <meta name="twitter:creator" content="@fcorowe">
 <meta name="twitter:card" content="summary">
@@ -149,7 +149,7 @@ div.csl-indent {
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }"><div class="container-fluid d-flex justify-content-between">
       <h1 class="quarto-secondary-nav-title">
-<span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Geographically weighted regression modelling</span>
+<span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Geographically weighted regression</span>
 </h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
@@ -232,7 +232,7 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./03-points.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Point data analysis</span></a>
+  <a href="./03-points.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Point patterns</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -267,7 +267,7 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./08-weighted-regression-modelling.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Geographically weighted regression modelling</span></a>
+  <a href="./08-weighted-regression-modelling.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Geographically weighted regression</span></a>
   </div>
 </li>
       </ul>
@@ -282,12 +282,12 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./09-spatio-temporal-wrangling.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Spatiotemporal wrangling</span></a>
+  <a href="./09-spatio-temporal-wrangling.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Space-time wrangling</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./10-spatio-temporal-modelling.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Spatiotemporal modelling</span></a>
+  <a href="./10-spatio-temporal-modelling.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Space-time modelling</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -347,7 +347,7 @@ div.csl-indent {
 <!-- main -->
 <main class="content page-columns page-full" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
 <div class="quarto-title-block"><div><h1 class="title d-none d-lg-block">
-<span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Geographically weighted regression modelling</span>
+<span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Geographically weighted regression</span>
 </h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
 </div>
 
@@ -365,7 +365,7 @@ div.csl-indent {
 <p>The content of this chapter is based on:</p>
 <ul>
 <li><p><span class="citation" data-cites="Fotheringham_et_al_2002_book">Fotheringham, Brunsdon, and Charlton (<a href="references.html#ref-Fotheringham_et_al_2002_book" role="doc-biblioref">2002</a>)</span>, a must-go book if you are working or planning to start working on geographically weighted regression modelling.</p></li>
-<li><p><span class="citation" data-cites="comber2022">(<a href="references.html#ref-comber2022" role="doc-biblioref"><strong>comber2022?</strong></a>)</span> provide a roadmap to approach various practical issues in the application of GWR.</p></li>
+<li><p><span class="citation" data-cites="comber2022">Comber et al. (<a href="references.html#ref-comber2022" role="doc-biblioref">2022</a>)</span> provide a roadmap to approach various practical issues in the application of GWR.</p></li>
 </ul>
 <section id="dependencies" class="level2" data-number="9.1"><h2 data-number="9.1" class="anchored" data-anchor-id="dependencies">
 <span class="header-section-number">9.1</span> Dependencies</h2>
@@ -844,7 +844,7 @@ Quasi-global R2: 0.7845551 </code></pre>
 <p><img src="08-weighted-regression-modelling_files/figure-html/unnamed-chunk-17-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
-<p>Analysing the map for long-term illness, a clear North-South divide can be identified. In the North we observed the expected positive relationship between COVID-19 and long-term illness i.e.&nbsp;as the share of the local population suffering from long-term illness rises, the cumulative number of positive COVID-19 cases is expected to increase. In the South, we observe the inverse pattern i.e.&nbsp;as the share of local population suffering from long-term illness rises, the cumulative number of positive COVID-19 cases is expected to drop. This pattern is counterintuitive but may be explained by the wider socio-economic disadvantages between the North and the South of England. The North is usually characterised by a persistent concentration of more disadvantaged neighbourhoods than the South where affluent households have tended to cluster for the last 40 years <span class="citation" data-cites="patias2021">(<a href="references.html#ref-patias2021" role="doc-biblioref"><strong>patias2021?</strong></a>)</span>.</p>
+<p>Analysing the map for long-term illness, a clear North-South divide can be identified. In the North we observed the expected positive relationship between COVID-19 and long-term illness i.e.&nbsp;as the share of the local population suffering from long-term illness rises, the cumulative number of positive COVID-19 cases is expected to increase. In the South, we observe the inverse pattern i.e.&nbsp;as the share of local population suffering from long-term illness rises, the cumulative number of positive COVID-19 cases is expected to drop. This pattern is counterintuitive but may be explained by the wider socio-economic disadvantages between the North and the South of England. The North is usually characterised by a persistent concentration of more disadvantaged neighbourhoods than the South where affluent households have tended to cluster for the last 40 years <span class="citation" data-cites="patias2021">(<a href="references.html#ref-patias2021" role="doc-biblioref">Patias, Rowe, and Arribas-Bel 2021</a>)</span>.</p>
 </section><section id="assessing-statistical-significance" class="level3" data-number="9.6.7"><h3 data-number="9.6.7" class="anchored" data-anchor-id="assessing-statistical-significance">
 <span class="header-section-number">9.6.7</span> Assessing statistical significance</h3>
 <p>While the maps above offer valuable insights to understand the spatial pattering of relationships, they do not identify whether these associations are statistically significant. They may not be. Roughly, if a coefficient estimate has an absolute value of t greater than 1.96 and the sample is sufficiently large, then it is statistically significant. Our sample has only 150 observations, so we are more conservative and considered a coefficient to be statistically significant if it has an absolute value of t larger than 2. Note also that p-values could be computed - see <span class="citation" data-cites="lu2014gwmodel">Lu et al. (<a href="references.html#ref-lu2014gwmodel" role="doc-biblioref">2014</a>)</span>.</p>
@@ -885,7 +885,7 @@ Quasi-global R2: 0.7845551 </code></pre>
 </blockquote>
 </section><section id="collinearity-in-gwr" class="level3" data-number="9.6.8"><h3 data-number="9.6.8" class="anchored" data-anchor-id="collinearity-in-gwr">
 <span class="header-section-number">9.6.8</span> Collinearity in GWR</h3>
-<p>An important final note is: collinearity tends to be problematic in GWR models. It can be present in the data subsets to estimate local coefficients even when not observed globally <span class="citation" data-cites="wheeler2005multicollinearity">Wheeler and Tiefelsdorf (<a href="references.html#ref-wheeler2005multicollinearity" role="doc-biblioref">2005</a>)</span>. Collinearity can be highly problematic in the case of compositional, categorical and ordinal predictors, and may result in exact local collinearity making the search for an optimal bandwidth impossible. A recent paper suggests potential ways forward <span class="citation" data-cites="comber2022">(<a href="references.html#ref-comber2022" role="doc-biblioref"><strong>comber2022?</strong></a>)</span>.</p>
+<p>An important final note is: collinearity tends to be problematic in GWR models. It can be present in the data subsets to estimate local coefficients even when not observed globally <span class="citation" data-cites="wheeler2005multicollinearity">Wheeler and Tiefelsdorf (<a href="references.html#ref-wheeler2005multicollinearity" role="doc-biblioref">2005</a>)</span>. Collinearity can be highly problematic in the case of compositional, categorical and ordinal predictors, and may result in exact local collinearity making the search for an optimal bandwidth impossible. A recent paper suggests potential ways forward <span class="citation" data-cites="comber2022">(<a href="references.html#ref-comber2022" role="doc-biblioref">Comber et al. 2022</a>)</span>.</p>
 </section></section><section id="questions" class="level2" data-number="9.7"><h2 data-number="9.7" class="anchored" data-anchor-id="questions">
 <span class="header-section-number">9.7</span> Questions</h2>
 <p>We will continue to use the COVID-19 dataset. Please see <span class="quarto-unresolved-ref">?sec-chp11</span> for details on the data.</p>
@@ -923,11 +923,17 @@ Belsley, David A, Edwin Kuh, and Roy E Welsch. 2005. <em>Regression Diagnostics:
 <div id="ref-brunsdon1998geographically" class="csl-entry" role="doc-biblioentry">
 Brunsdon, Chris, Stewart Fotheringham, and Martin Charlton. 1998. <span>“Geographically Weighted Regression.”</span> <em>Journal of the Royal Statistical Society: Series D (The Statistician)</em> 47 (3): 431–43.
 </div>
+<div id="ref-comber2022" class="csl-entry" role="doc-biblioentry">
+Comber, Alexis, Christopher Brunsdon, Martin Charlton, Guanpeng Dong, Richard Harris, Binbin Lu, Yihe Lü, et al. 2022. <span>“A Route Map for Successful Applications of Geographically Weighted Regression.”</span> <em>Geographical Analysis</em> 55 (1): 155–78. <a href="https://doi.org/10.1111/gean.12316">https://doi.org/10.1111/gean.12316</a>.
+</div>
 <div id="ref-Fotheringham_et_al_2002_book" class="csl-entry" role="doc-biblioentry">
 Fotheringham, Stewart, Chris Brunsdon, and Martin Charlton. 2002. <em>Geographically Weighted Regression</em>. John Wiley &amp; Sons.
 </div>
 <div id="ref-lu2014gwmodel" class="csl-entry" role="doc-biblioentry">
 Lu, Binbin, Paul Harris, Martin Charlton, and Chris Brunsdon. 2014. <span>“The GWmodel r Package: Further Topics for Exploring Spatial Heterogeneity Using Geographically Weighted Models.”</span> <em>Geo-Spatial Information Science</em> 17 (2): 85–101.
+</div>
+<div id="ref-patias2021" class="csl-entry" role="doc-biblioentry">
+Patias, Nikos, Francisco Rowe, and Dani Arribas-Bel. 2021. <span>“Trajectories of Neighbourhood Inequality in Britain: Unpacking Inter<span>-</span>Regional Socioeconomic Imbalances, 1971<span>-</span>2011.”</span> <em>The Geographical Journal</em> 188 (2): 150–65. <a href="https://doi.org/10.1111/geoj.12420">https://doi.org/10.1111/geoj.12420</a>.
 </div>
 <div id="ref-wheeler2005multicollinearity" class="csl-entry" role="doc-biblioentry">
 Wheeler, David, and Michael Tiefelsdorf. 2005. <span>“Multicollinearity and Correlation Among Local Regression Coefficients in Geographically Weighted Regression.”</span> <em>Journal of Geographical Systems</em> 7 (2): 161–87.
@@ -1123,11 +1129,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
   <div class="nav-page nav-page-next">
       <a href="./09-spatio-temporal-wrangling.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Spatiotemporal wrangling</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Space-time wrangling</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="sourceCode" id="cb34" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Geographically weighted regression modelling</span></span>
+<div class="sourceCode" id="cb34" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Geographically weighted regression</span></span>
 <span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>This chapter provides an introduction to geographically weighted regression models.</span>
 <span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a></span>

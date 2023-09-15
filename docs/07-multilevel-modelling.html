@@ -232,7 +232,7 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./03-points.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Point data analysis</span></a>
+  <a href="./03-points.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Point patterns</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -267,7 +267,7 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./08-weighted-regression-modelling.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Geographically weighted regression modelling</span></a>
+  <a href="./08-weighted-regression-modelling.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Geographically weighted regression</span></a>
   </div>
 </li>
       </ul>
@@ -282,12 +282,12 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./09-spatio-temporal-wrangling.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Spatiotemporal wrangling</span></a>
+  <a href="./09-spatio-temporal-wrangling.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Space-time wrangling</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./10-spatio-temporal-modelling.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Spatiotemporal modelling</span></a>
+  <a href="./10-spatio-temporal-modelling.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Space-time modelling</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -909,17 +909,17 @@ E01006518 -0.01885870</code></pre>
 <div class="sourceCode" id="cb39"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># obtain estimates</span></span>
 <span><span class="fu">merTools</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/merTools/man/REsim.html">REsim</a></span><span class="op">(</span><span class="va">model3</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="fl">10</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>   groupFctr   groupID        term         mean       median         sd
-1    lsoa_cd E01006512 (Intercept) -0.015282358 -0.014848796 0.01903544
-2    lsoa_cd E01006513 (Intercept) -0.016209433 -0.015065126 0.02047753
-3    lsoa_cd E01006514 (Intercept) -0.025155978 -0.024718295 0.02161466
-4    lsoa_cd E01006515 (Intercept) -0.018462219 -0.019780436 0.01908881
-5    lsoa_cd E01006518 (Intercept) -0.018345939 -0.020120473 0.01878457
-6    lsoa_cd E01006519 (Intercept) -0.015526480 -0.014544111 0.01030805
-7    lsoa_cd E01006520 (Intercept) -0.023959651 -0.023568505 0.01962450
-8    lsoa_cd E01006521 (Intercept)  0.007240119  0.005636689 0.02009481
-9    lsoa_cd E01006522 (Intercept)  0.018042823  0.017148770 0.01983297
-10   lsoa_cd E01006523 (Intercept)  0.003177441  0.004090357 0.01880763</code></pre>
+<pre><code>   groupFctr   groupID        term         mean       median          sd
+1    lsoa_cd E01006512 (Intercept) -0.015763408 -0.013987372 0.019115174
+2    lsoa_cd E01006513 (Intercept) -0.015111023 -0.015145956 0.021393816
+3    lsoa_cd E01006514 (Intercept) -0.021781716 -0.021466940 0.020226755
+4    lsoa_cd E01006515 (Intercept) -0.015015691 -0.016000755 0.020034262
+5    lsoa_cd E01006518 (Intercept) -0.018209869 -0.017650700 0.020405975
+6    lsoa_cd E01006519 (Intercept) -0.016943733 -0.017015372 0.009641406
+7    lsoa_cd E01006520 (Intercept) -0.024996925 -0.024578670 0.021176126
+8    lsoa_cd E01006521 (Intercept)  0.006356912  0.006060736 0.020912220
+9    lsoa_cd E01006522 (Intercept)  0.020203869  0.021555781 0.017869399
+10   lsoa_cd E01006523 (Intercept)  0.004106235  0.003951569 0.018619549</code></pre>
 </div>
 </div>
 <p>The results contain the estimated mean, median and standard deviation for the intercept within each group (e.g.&nbsp;LSOA). The mean estimates are similar to those obtained from <code>ranef</code> with some small differences due to rounding.</p>
@@ -978,9 +978,9 @@ Projected CRS: Transverse_Mercator</code></pre>
  $ groupFctr: chr  "msoa_cd" "msoa_cd" "msoa_cd" "msoa_cd" ...
  $ groupID  : chr  "E02001347" "E02001348" "E02001349" "E02001350" ...
  $ term     : chr  "(Intercept)" "(Intercept)" "(Intercept)" "(Intercept)" ...
- $ mean     : num  -0.01346 -0.0256 -0.03288 0.00458 0.02411 ...
- $ median   : num  -0.01173 -0.02132 -0.03242 0.00756 0.0232 ...
- $ sd       : num  0.0327 0.0338 0.0303 0.0322 0.0167 ...</code></pre>
+ $ mean     : num  -0.01655 -0.02469 -0.02912 0.00371 0.02316 ...
+ $ median   : num  -0.01401 -0.02312 -0.02664 0.00378 0.02175 ...
+ $ sd       : num  0.0345 0.033 0.0304 0.0342 0.0153 ...</code></pre>
 </div>
 <div class="sourceCode" id="cb48"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># merge data</span></span>
 <span><span class="va">msoa_shp</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/sp/man/merge.html">merge</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">msoa_shp</span>, y <span class="op">=</span> <span class="va">re_msoa</span>, by.x <span class="op">=</span> <span class="st">"MSOA_CD"</span>, by.y <span class="op">=</span> <span class="st">"groupID"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -1532,9 +1532,9 @@ Projected CRS: Transverse_Mercator</code></pre>
  $ groupFctr: chr  "msoa_cd" "msoa_cd" "msoa_cd" "msoa_cd" ...
  $ groupID  : chr  "E02001347" "E02001348" "E02001349" "E02001350" ...
  $ term     : chr  "lt_ill" "lt_ill" "lt_ill" "lt_ill" ...
- $ mean     : num  0.0217 -0.1152 0.054 -0.143 -0.2845 ...
- $ median   : num  0.0192 -0.1183 0.0686 -0.1399 -0.2835 ...
- $ sd       : num  0.0438 0.0774 0.0857 0.0374 0.0342 ...</code></pre>
+ $ mean     : num  0.0223 -0.109 0.0524 -0.1433 -0.2808 ...
+ $ median   : num  0.0172 -0.1113 0.0512 -0.1427 -0.2822 ...
+ $ sd       : num  0.044 0.0753 0.0853 0.0351 0.0348 ...</code></pre>
 </div>
 <div class="sourceCode" id="cb95"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># merge data</span></span>
 <span><span class="va">msoa_shp</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/sp/man/merge.html">merge</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">msoa_shp</span>, y <span class="op">=</span> <span class="va">re_msoa_m6</span>, by.x <span class="op">=</span> <span class="st">"MSOA_CD"</span>, by.y <span class="op">=</span> <span class="st">"groupID"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -1896,7 +1896,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
   <div class="nav-page nav-page-next">
       <a href="./08-weighted-regression-modelling.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Geographically weighted regression modelling</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Geographically weighted regression</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">

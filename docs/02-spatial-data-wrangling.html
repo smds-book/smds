@@ -232,7 +232,7 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./03-points.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Point data analysis</span></a>
+  <a href="./03-points.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Point patterns</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -267,7 +267,7 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./08-weighted-regression-modelling.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Geographically weighted regression modelling</span></a>
+  <a href="./08-weighted-regression-modelling.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Geographically weighted regression</span></a>
   </div>
 </li>
       </ul>
@@ -282,12 +282,12 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./09-spatio-temporal-wrangling.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Spatiotemporal wrangling</span></a>
+  <a href="./09-spatio-temporal-wrangling.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Space-time wrangling</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./10-spatio-temporal-modelling.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Spatiotemporal modelling</span></a>
+  <a href="./10-spatio-temporal-modelling.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Space-time modelling</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -388,7 +388,7 @@ div.csl-indent {
 <li><p><span class="citation" data-cites="grolemund_wickham_2019_book">Grolemund and Wickham (<a href="references.html#ref-grolemund_wickham_2019_book" role="doc-biblioref">2019</a>)</span>, this book illustrates key libraries, including tidyverse, and functions for data manipulation in R</p></li>
 <li><p><span class="citation" data-cites="Xie_et_al_2019_book">Xie, Allaire, and Grolemund (<a href="references.html#ref-Xie_et_al_2019_book" role="doc-biblioref">2019</a>)</span>, excellent introduction to R markdown!</p></li>
 <li><p><span class="citation" data-cites="envs450_2018">Williamson (<a href="references.html#ref-envs450_2018" role="doc-biblioref">2018</a>)</span>, some examples from the first lecture of ENVS450 are used to explain the various types of random variables.</p></li>
-<li><p><span class="citation" data-cites="lovelace2019">(<a href="references.html#ref-lovelace2019" role="doc-biblioref"><strong>lovelace2019?</strong></a>)</span>, a really good book on handling spatial data and historical background of the evolution of R packages for spatial data analysis.</p></li>
+<li><p><span class="citation" data-cites="lovelace2019">Lovelace, Nowosad, and Muenchow (<a href="references.html#ref-lovelace2019" role="doc-biblioref">2019</a>)</span>, a really good book on handling spatial data and historical background of the evolution of R packages for spatial data analysis.</p></li>
 </ul>
 <section id="dependencies" class="level2 page-columns page-full" data-number="3.1"><h2 data-number="3.1" class="anchored" data-anchor-id="dependencies">
 <span class="header-section-number">3.1</span> Dependencies</h2>
@@ -996,7 +996,7 @@ Levels: female male</code></pre>
 </div>
 </section></section><section id="using-spatial-data-frames" class="level2" data-number="3.10"><h2 data-number="3.10" class="anchored" data-anchor-id="using-spatial-data-frames">
 <span class="header-section-number">3.10</span> Using Spatial Data Frames</h2>
-<p>A core area of this module is learning to work with spatial data in R. R has various purposedly designed <strong>packages</strong> for manipulation of spatial data and spatial analysis techniques. Various R packages exist in CRAN eg. <code>spatial</code>, <code>sgeostat</code>, <code>splancs</code>, <code>maptools</code>, <code>tmap</code>, <code>rgdal</code>, <code>spand</code> and more recent development of <code>sf</code> - see <span class="citation" data-cites="lovelace2019">(<a href="references.html#ref-lovelace2019" role="doc-biblioref"><strong>lovelace2019?</strong></a>)</span> for a great description and historical context for some of these packages.</p>
+<p>A core area of this module is learning to work with spatial data in R. R has various purposedly designed <strong>packages</strong> for manipulation of spatial data and spatial analysis techniques. Various R packages exist in CRAN eg. <code>spatial</code>, <code>sgeostat</code>, <code>splancs</code>, <code>maptools</code>, <code>tmap</code>, <code>rgdal</code>, <code>spand</code> and more recent development of <code>sf</code> - see <span class="citation" data-cites="lovelace2019">Lovelace, Nowosad, and Muenchow (<a href="references.html#ref-lovelace2019" role="doc-biblioref">2019</a>)</span> for a great description and historical context for some of these packages.</p>
 <p>During this session, we will use <code>sf</code>.</p>
 <p>We first need to import our spatial data. We will use a shapefile containing data at Output Area (OA) level for Liverpool. These data illustrates the hierarchical structure of spatial data.</p>
 <section id="read-spatial-data" class="level3" data-number="3.10.1"><h3 data-number="3.10.1" class="anchored" data-anchor-id="read-spatial-data">
@@ -1272,6 +1272,9 @@ Projected CRS: Transverse_Mercator</code></pre>
 <div id="ref-grolemund_wickham_2019_book" class="csl-entry" role="doc-biblioentry">
 Grolemund, Garrett, and Hadley Wickham. 2019. <em>R for Data Science</em>. O’Reilly, US. <a href="https://r4ds.had.co.nz">https://r4ds.had.co.nz</a>.
 </div>
+<div id="ref-lovelace2019" class="csl-entry" role="doc-biblioentry">
+Lovelace, Robin, Jakub Nowosad, and Jannes Muenchow. 2019. <em>Geocomputation with r</em>. Chapman; Hall/CRC. <a href="https://doi.org/10.1201/9780203730058">https://doi.org/10.1201/9780203730058</a>.
+</div>
 <div id="ref-envs450_2018" class="csl-entry" role="doc-biblioentry">
 Williamson, Paul. 2018. <span>“Survey Analysis.”</span>
 </div>
@@ -1469,7 +1472,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
   <div class="nav-page nav-page-next">
       <a href="./03-points.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Point data analysis</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Point patterns</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">

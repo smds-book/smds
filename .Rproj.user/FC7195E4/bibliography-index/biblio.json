@@ -1,6 +1,117 @@
 {
     "sources": [
         {
+            "DOI": "10.1093/comjnl/27.2.97",
+            "ISSN": "0010-4620",
+            "URL": "https://doi.org/10.1093/comjnl/27.2.97",
+            "author": [
+                {
+                    "family": "Knuth",
+                    "given": "Donald E."
+                }
+            ],
+            "container-title": "Comput. J.",
+            "id": "knuth84",
+            "issue": "2",
+            "issued": {
+                "date-parts": [
+                    [
+                        1984,
+                        5
+                    ]
+                ]
+            },
+            "page": "97-111",
+            "publisher": "Oxford University Press, Inc.",
+            "publisher-place": "USA",
+            "title": "Literate programming",
+            "type": "article-journal",
+            "volume": "27"
+        },
+        {
+            "DOI": "10.1201/9780203730058",
+            "URL": "http://dx.doi.org/10.1201/9780203730058",
+            "author": [
+                {
+                    "family": "Lovelace",
+                    "given": "Robin"
+                },
+                {
+                    "family": "Nowosad",
+                    "given": "Jakub"
+                },
+                {
+                    "family": "Muenchow",
+                    "given": "Jannes"
+                }
+            ],
+            "id": "lovelace2019",
+            "issued": {
+                "date-parts": [
+                    [
+                        2019,
+                        3,
+                        22
+                    ]
+                ]
+            },
+            "publisher": "Chapman; Hall/CRC",
+            "title": "Geocomputation with r",
+            "type": "book"
+        },
+        {
+            "author": [
+                {
+                    "family": "Brunsdon",
+                    "given": "Chris"
+                },
+                {
+                    "family": "Comber",
+                    "given": "Lex"
+                }
+            ],
+            "id": "comber2015",
+            "issued": {
+                "date-parts": [
+                    [
+                        2015
+                    ]
+                ]
+            },
+            "publisher": "Sage",
+            "title": "An introduction to r for spatial analysis & mapping",
+            "type": "book"
+        },
+        {
+            "DOI": "10.1007/978-1-4614-7618-4",
+            "URL": "http://dx.doi.org/10.1007/978-1-4614-7618-4",
+            "author": [
+                {
+                    "family": "Bivand",
+                    "given": "Roger S."
+                },
+                {
+                    "family": "Pebesma",
+                    "given": "Edzer"
+                },
+                {
+                    "family": "Gómez-Rubio",
+                    "given": "Virgilio"
+                }
+            ],
+            "id": "bivand2013",
+            "issued": {
+                "date-parts": [
+                    [
+                        2013
+                    ]
+                ]
+            },
+            "publisher": "Springer New York",
+            "title": "Applied spatial data analysis with r",
+            "type": "book"
+        },
+        {
             "author": [
                 {
                     "family": "Önnerfors",
@@ -31,6 +142,75 @@
             "type": "article-journal"
         },
         {
+            "DOI": "10.1016/j.trc.2017.11.005",
+            "URL": "http://dx.doi.org/10.1016/j.trc.2017.11.005",
+            "author": [
+                {
+                    "family": "Tao",
+                    "given": "Sui"
+                },
+                {
+                    "family": "Corcoran",
+                    "given": "Jonathan"
+                },
+                {
+                    "family": "Rowe",
+                    "given": "Francisco"
+                },
+                {
+                    "family": "Hickman",
+                    "given": "Mark"
+                }
+            ],
+            "container-title": "Transportation Research Part C: Emerging Technologies",
+            "id": "tao2018",
+            "issued": {
+                "date-parts": [
+                    [
+                        2018,
+                        1
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "147-167",
+            "title": "To travel or not to travel: ‘Weather’ is the question. Modelling the effect of local weather conditions on bus ridership",
+            "title-short": "To travel or not to travel",
+            "type": "article-journal",
+            "volume": "86"
+        },
+        {
+            "DOI": "10.1080/21681376.2020.1811139",
+            "URL": "http://dx.doi.org/10.1080/21681376.2020.1811139",
+            "author": [
+                {
+                    "family": "Rowe",
+                    "given": "Francisco"
+                },
+                {
+                    "family": "Patias",
+                    "given": "Nikos"
+                }
+            ],
+            "container-title": "Regional Studies, Regional Science",
+            "id": "rowe2020",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020,
+                        1,
+                        1
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "390-393",
+            "title": "Mapping the spatial patterns of internal migration in Europe",
+            "type": "article-journal",
+            "volume": "7"
+        },
+        {
             "author": [
                 {
                     "family": "Kwan",
@@ -58,53 +238,40 @@
             "volume": "27"
         },
         {
+            "DOI": "10.1109/access.2018.2873779",
+            "URL": "http://dx.doi.org/10.1109/ACCESS.2018.2873779",
             "author": [
                 {
-                    "family": "Rowe",
-                    "given": "Francisco"
+                    "family": "Kong",
+                    "given": "Xiangjie"
                 },
                 {
-                    "family": "Patias",
-                    "given": "Nikos"
+                    "family": "Li",
+                    "given": "Menglin"
+                },
+                {
+                    "family": "Ma",
+                    "given": "Kai"
+                },
+                {
+                    "family": "Tian",
+                    "given": "Kaiqi"
+                },
+                {
+                    "family": "Wang",
+                    "given": "Mengyuan"
+                },
+                {
+                    "family": "Ning",
+                    "given": "Zhaolong"
+                },
+                {
+                    "family": "Xia",
+                    "given": "Feng"
                 }
             ],
-            "container-title": "Regional Studies, Regional Science",
-            "id": "rowe2020mapping",
-            "issue": "1",
-            "issued": {
-                "date-parts": [
-                    [
-                        2020
-                    ]
-                ]
-            },
-            "page": "390-393",
-            "publisher": "Routledge",
-            "title": "Mapping the spatial patterns of internal migration in europe",
-            "type": "article-journal",
-            "volume": "7"
-        },
-        {
-            "author": [
-                {
-                    "family": "Tao",
-                    "given": "Sui"
-                },
-                {
-                    "family": "Corcoran",
-                    "given": "Jonathan"
-                },
-                {
-                    "family": "Rowe",
-                    "given": "Francisco"
-                },
-                {
-                    "family": "Hickman",
-                    "given": "Mark"
-                }
-            ],
-            "container-title": "Transportation research part C: emerging technologies",
-            "id": "tao2018travel",
+            "container-title": "IEEE Access",
+            "id": "kong2018",
             "issued": {
                 "date-parts": [
                     [
@@ -112,14 +279,129 @@
                     ]
                 ]
             },
-            "page": "147-167",
-            "publisher": "Elsevier",
-            "title": "To travel or not to travel:‘weather’is the question. Modelling the effect of local weather conditions on bus ridership",
-            "title-short": "To travel or not to travel",
+            "page": "58295-58306",
+            "title": "Big trajectory data: A survey of applications and services",
+            "title-short": "Big trajectory data",
             "type": "article-journal",
-            "volume": "86"
+            "volume": "6"
         },
         {
+            "author": [
+                {
+                    "family": "Openshaw",
+                    "given": "Stan"
+                }
+            ],
+            "container-title": "Quantitative geography: A British view",
+            "id": "openshaw1981modifiable",
+            "issued": {
+                "date-parts": [
+                    [
+                        1981
+                    ]
+                ]
+            },
+            "page": "60-69",
+            "publisher": "Routledge; Kegan Paul, Andover",
+            "title": "The modifiable areal unit problem",
+            "type": "article-journal"
+        },
+        {
+            "DOI": "10.3390/safety2030017",
+            "URL": "http://dx.doi.org/10.3390/safety2030017",
+            "author": [
+                {
+                    "family": "Loidl",
+                    "given": "Martin"
+                },
+                {
+                    "family": "Wallentin",
+                    "given": "Gudrun"
+                },
+                {
+                    "family": "Wendel",
+                    "given": "Robin"
+                },
+                {
+                    "family": "Zagel",
+                    "given": "Bernhard"
+                }
+            ],
+            "container-title": "Safety",
+            "id": "loidl2016",
+            "issue": "3",
+            "issued": {
+                "date-parts": [
+                    [
+                        2016,
+                        9,
+                        1
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "17",
+            "title": "Mapping Bicycle Crash Risk Patterns on the Local Scale",
+            "type": "article-journal",
+            "volume": "2"
+        },
+        {
+            "author": [
+                {
+                    "family": "Fotheringham",
+                    "given": "A Stewart"
+                },
+                {
+                    "family": "Wong",
+                    "given": "David WS"
+                }
+            ],
+            "container-title": "Environment and planning A",
+            "id": "fotheringham1991modifiable",
+            "issue": "7",
+            "issued": {
+                "date-parts": [
+                    [
+                        1991
+                    ]
+                ]
+            },
+            "page": "1025-1044",
+            "publisher": "SAGE Publications Sage UK: London, England",
+            "title": "The modifiable areal unit problem in multivariate statistical analysis",
+            "type": "article-journal",
+            "volume": "23"
+        },
+        {
+            "DOI": "10.1080/00343401003614266",
+            "URL": "http://dx.doi.org/10.1080/00343401003614266",
+            "author": [
+                {
+                    "family": "Niedomysl",
+                    "given": "Thomas"
+                }
+            ],
+            "container-title": "Regional Studies",
+            "id": "niedomysl2011",
+            "issue": "6",
+            "issued": {
+                "date-parts": [
+                    [
+                        2011,
+                        6
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "843-855",
+            "title": "How Migration Motives Change over Migration Distance: Evidence on Variation across Socio-economic and Demographic Groups",
+            "title-short": "How Migration Motives Change over Migration Distance",
+            "type": "article-journal",
+            "volume": "45"
+        },
+        {
+            "DOI": "10.1007/s12061-018-9274-6",
+            "URL": "http://dx.doi.org/10.1007/s12061-018-9274-6",
             "author": [
                 {
                     "family": "Stillwell",
@@ -135,49 +417,127 @@
                 }
             ],
             "container-title": "Applied Spatial Analysis and Policy",
-            "id": "stillwell2018spatial",
+            "id": "stillwell2018",
             "issue": "4",
             "issued": {
                 "date-parts": [
                     [
-                        2018
+                        2018,
+                        8,
+                        13
                     ]
                 ]
             },
+            "language": "en",
             "page": "693-711",
-            "publisher": "Springer",
-            "title": "Spatial aggregation methods for investigating the MAUP effects in migration analysis",
+            "title": "Spatial Aggregation Methods for Investigating the MAUP Effects in Migration Analysis",
             "type": "article-journal",
             "volume": "11"
         },
         {
+            "DOI": "10.1080/17421772.2017.1273541",
+            "URL": "http://dx.doi.org/10.1080/17421772.2017.1273541",
             "author": [
                 {
-                    "family": "Singleton",
-                    "given": "Alexander D"
+                    "family": "Casado-Díaz",
+                    "given": "José Manuel"
                 },
                 {
-                    "family": "Spielman",
-                    "given": "Seth E"
+                    "family": "Martínez-Bernabéu",
+                    "given": "Lucas"
+                },
+                {
+                    "family": "Rowe",
+                    "given": "Francisco"
                 }
             ],
-            "container-title": "The Professional Geographer",
-            "id": "singleton2014past",
+            "container-title": "Spatial Economic Analysis",
+            "id": "casado-díaz2017",
             "issue": "4",
             "issued": {
                 "date-parts": [
                     [
-                        2014
+                        2017,
+                        2,
+                        13
                     ]
                 ]
             },
+            "language": "en",
+            "page": "379-403",
+            "title": "An evolutionary approach to the delimitation of labour market areas: an empirical application for Chile",
+            "title-short": "An evolutionary approach to the delimitation of labour market areas",
+            "type": "article-journal",
+            "volume": "12"
+        },
+        {
+            "DOI": "10.1016/j.jue.2019.103217",
+            "URL": "http://dx.doi.org/10.1016/j.jue.2019.103217",
+            "author": [
+                {
+                    "family": "Arribas-Bel",
+                    "given": "Daniel"
+                },
+                {
+                    "family": "Garcia-López",
+                    "given": "M.-À."
+                },
+                {
+                    "family": "Viladecans-Marsal",
+                    "given": "Elisabet"
+                }
+            ],
+            "container-title": "Journal of Urban Economics",
+            "id": "arribas-bel2021",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021,
+                        9
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "103217",
+            "title": "Building(s and) cities: Delineating urban areas with a machine learning algorithm",
+            "title-short": "Building(s and) cities",
+            "type": "article-journal",
+            "volume": "125"
+        },
+        {
+            "DOI": "10.1080/00330124.2013.848764",
+            "URL": "http://dx.doi.org/10.1080/00330124.2013.848764",
+            "author": [
+                {
+                    "family": "Singleton",
+                    "given": "Alexander D."
+                },
+                {
+                    "family": "Spielman",
+                    "given": "Seth E."
+                }
+            ],
+            "container-title": "The Professional Geographer",
+            "id": "singleton2013",
+            "issue": "4",
+            "issued": {
+                "date-parts": [
+                    [
+                        2013,
+                        11,
+                        27
+                    ]
+                ]
+            },
+            "language": "en",
             "page": "558-567",
-            "publisher": "Taylor & Francis",
-            "title": "The past, present, and future of geodemographic research in the united states and united kingdom",
+            "title": "The Past, Present, and Future of Geodemographic Research in the United States and United Kingdom",
             "type": "article-journal",
             "volume": "66"
         },
         {
+            "DOI": "10.1007/978-3-030-14745-7_13",
+            "URL": "http://dx.doi.org/10.1007/978-3-030-14745-7_13",
             "author": [
                 {
                     "family": "Patias",
@@ -192,130 +552,25 @@
                     "given": "Stefano"
                 }
             ],
-            "container-title": "International conference on geographic information science",
-            "id": "patias2019scalable",
+            "id": "patias2019",
             "issued": {
                 "date-parts": [
                     [
-                        2019
+                        2019,
+                        4,
+                        16
                     ]
                 ]
             },
             "page": "223-241",
-            "publisher": "Springer",
+            "publisher": "Springer International Publishing",
             "title": "A scalable analytical framework for spatio-temporal analysis of neighborhood change: A sequence analysis approach",
             "title-short": "A scalable analytical framework for spatio-temporal analysis of neighborhood change",
-            "type": "paper-conference"
+            "type": "chapter"
         },
         {
-            "author": [
-                {
-                    "family": "Arribas-Bel",
-                    "given": "Daniel"
-                },
-                {
-                    "family": "Garcia-López",
-                    "given": "M-À"
-                },
-                {
-                    "family": "Viladecans-Marsal",
-                    "given": "Elisabet"
-                }
-            ],
-            "container-title": "Journal of Urban Economics",
-            "id": "arribas2019building",
-            "issued": {
-                "date-parts": [
-                    [
-                        2019
-                    ]
-                ]
-            },
-            "page": "103217",
-            "publisher": "Elsevier",
-            "title": "Building (s and) cities: Delineating urban areas with a machine learning algorithm",
-            "title-short": "Building (s and) cities",
-            "type": "article-journal"
-        },
-        {
-            "author": [
-                {
-                    "family": "Casado-Dı́az",
-                    "given": "José Manuel"
-                },
-                {
-                    "family": "Martı́nez-Bernabéu",
-                    "given": "Lucas"
-                },
-                {
-                    "family": "Rowe",
-                    "given": "Francisco"
-                }
-            ],
-            "container-title": "Spatial economic analysis",
-            "id": "casado2017evolutionary",
-            "issue": "4",
-            "issued": {
-                "date-parts": [
-                    [
-                        2017
-                    ]
-                ]
-            },
-            "page": "379-403",
-            "publisher": "Taylor & Francis",
-            "title": "An evolutionary approach to the delimitation of labour market areas: An empirical application for chile",
-            "title-short": "An evolutionary approach to the delimitation of labour market areas",
-            "type": "article-journal",
-            "volume": "12"
-        },
-        {
-            "author": [
-                {
-                    "family": "Niedomysl",
-                    "given": "Thomas"
-                }
-            ],
-            "container-title": "Regional Studies",
-            "id": "niedomysl2011migration",
-            "issue": "6",
-            "issued": {
-                "date-parts": [
-                    [
-                        2011
-                    ]
-                ]
-            },
-            "page": "843-855",
-            "publisher": "Taylor & Francis",
-            "title": "How migration motives change over migration distance: Evidence on variation across socio-economic and demographic groups",
-            "title-short": "How migration motives change over migration distance",
-            "type": "article-journal",
-            "volume": "45"
-        },
-        {
-            "author": [
-                {
-                    "family": "Robinson",
-                    "given": "WS"
-                }
-            ],
-            "container-title": "American Sociological Review",
-            "id": "robinson1950ecological",
-            "issue": "195",
-            "issued": {
-                "date-parts": [
-                    [
-                        1950
-                    ]
-                ]
-            },
-            "page": "351-57",
-            "title": "Ecological correlations and individual behavior",
-            "type": "article-journal",
-            "volume": "15"
-        },
-        {
+            "DOI": "10.1177/0309132520924722",
+            "URL": "http://dx.doi.org/10.1177/0309132520924722",
             "author": [
                 {
                     "family": "Wolf",
@@ -351,351 +606,80 @@
                 }
             ],
             "container-title": "Progress in Human Geography",
-            "id": "wolf2020quantitative",
-            "issued": {
-                "date-parts": [
-                    [
-                        2020
-                    ]
-                ]
-            },
-            "page": "0309132520924722",
-            "publisher": "SAGE Publications Sage UK: London, England",
-            "title": "Quantitative geography III: Future challenges and challenging futures",
-            "title-short": "Quantitative geography III",
-            "type": "article-journal"
-        },
-        {
-            "author": [
-                {
-                    "family": "Fotheringham",
-                    "given": "A Stewart"
-                },
-                {
-                    "family": "Wong",
-                    "given": "David WS"
-                }
-            ],
-            "container-title": "Environment and planning A",
-            "id": "fotheringham1991modifiable",
-            "issue": "7",
-            "issued": {
-                "date-parts": [
-                    [
-                        1991
-                    ]
-                ]
-            },
-            "page": "1025-1044",
-            "publisher": "SAGE Publications Sage UK: London, England",
-            "title": "The modifiable areal unit problem in multivariate statistical analysis",
-            "type": "article-journal",
-            "volume": "23"
-        },
-        {
-            "author": [
-                {
-                    "family": "Loidl",
-                    "given": "Martin"
-                },
-                {
-                    "family": "Wallentin",
-                    "given": "Gudrun"
-                },
-                {
-                    "family": "Wendel",
-                    "given": "Robin"
-                },
-                {
-                    "family": "Zagel",
-                    "given": "Bernhard"
-                }
-            ],
-            "container-title": "Safety",
-            "id": "loidl2016mapping",
+            "id": "wolf2020",
             "issue": "3",
             "issued": {
                 "date-parts": [
                     [
-                        2016
+                        2020,
+                        5,
+                        26
                     ]
                 ]
             },
-            "page": "17",
-            "publisher": "Multidisciplinary Digital Publishing Institute",
-            "title": "Mapping bicycle crash risk patterns on the local scale",
+            "language": "en",
+            "page": "596-608",
+            "title": "Quantitative geography III: Future challenges and challenging futures",
+            "title-short": "Quantitative geography III",
             "type": "article-journal",
-            "volume": "2"
+            "volume": "45"
         },
         {
             "author": [
                 {
-                    "family": "Openshaw",
-                    "given": "Stan"
+                    "family": "Robinson",
+                    "given": "WS"
                 }
             ],
-            "container-title": "Quantitative geography: A British view",
-            "id": "openshaw1981modifiable",
+            "container-title": "American Sociological Review",
+            "id": "robinson1950ecological",
+            "issue": "195",
             "issued": {
                 "date-parts": [
                     [
-                        1981
+                        1950
                     ]
                 ]
             },
-            "page": "60-69",
-            "publisher": "Routledge; Kegan Paul, Andover",
-            "title": "The modifiable areal unit problem",
-            "type": "article-journal"
+            "page": "351-57",
+            "title": "Ecological correlations and individual behavior",
+            "type": "article-journal",
+            "volume": "15"
         },
         {
             "author": [
                 {
-                    "family": "Rey",
-                    "given": "Sergio J."
-                },
-                {
-                    "family": "Arribas-Bel",
-                    "given": "Daniel"
-                },
-                {
-                    "family": "Wolf",
-                    "given": "Levi J."
+                    "family": "Anselin",
+                    "given": "Luc"
                 }
             ],
-            "id": "reyABwolf",
-            "issued": {
-                "date-parts": []
-            },
-            "publisher": "CRC press",
-            "status": "forthcoming",
-            "title": "Geographic data science with PySAL and the PyData stack",
-            "type": "book"
-        },
-        {
-            "author": [
-                {
-                    "family": "Kong",
-                    "given": "Xiangjie"
-                },
-                {
-                    "family": "Li",
-                    "given": "Menglin"
-                },
-                {
-                    "family": "Ma",
-                    "given": "Kai"
-                },
-                {
-                    "family": "Tian",
-                    "given": "Kaiqi"
-                },
-                {
-                    "family": "Wang",
-                    "given": "Mengyuan"
-                },
-                {
-                    "family": "Ning",
-                    "given": "Zhaolong"
-                },
-                {
-                    "family": "Xia",
-                    "given": "Feng"
-                }
-            ],
-            "container-title": "IEEE Access",
-            "id": "kong2018big",
+            "id": "anselin1988spatial",
             "issued": {
                 "date-parts": [
                     [
-                        2018
+                        1988
                     ]
                 ]
             },
-            "page": "58295-58306",
-            "publisher": "IEEE",
-            "title": "Big trajectory data: A survey of applications and services",
-            "title-short": "Big trajectory data",
-            "type": "article-journal",
-            "volume": "6"
+            "publisher": "Springer Science & Business Media",
+            "title": "Spatial econometrics: Methods and models",
+            "title-short": "Spatial econometrics",
+            "type": "book",
+            "volume": "4"
         },
         {
+            "URL": "https://r4ds.had.co.nz",
             "author": [
-                {
-                    "family": "Xie",
-                    "given": "Yihui"
-                },
-                {
-                    "family": "Allaire",
-                    "given": "Joseph J"
-                },
                 {
                     "family": "Grolemund",
                     "given": "Garrett"
+                },
+                {
+                    "family": "Wickham",
+                    "given": "Hadley"
                 }
             ],
-            "id": "xie2018r",
-            "issued": {
-                "date-parts": [
-                    [
-                        2018
-                    ]
-                ]
-            },
-            "publisher": "CRC Press",
-            "title": "R markdown: The definitive guide",
-            "title-short": "R markdown",
-            "type": "book"
-        },
-        {
-            "author": [
-                {
-                    "family": "Hyndman",
-                    "given": "Rob J"
-                },
-                {
-                    "family": "Athanasopoulos",
-                    "given": "George"
-                }
-            ],
-            "id": "hyndman2018forecasting",
-            "issued": {
-                "date-parts": [
-                    [
-                        2018
-                    ]
-                ]
-            },
-            "publisher": "OTexts",
-            "title": "Forecasting: Principles and practice",
-            "title-short": "Forecasting",
-            "type": "book"
-        },
-        {
-            "author": [
-                {
-                    "family": "Pebesma",
-                    "given": "Edzer"
-                },
-                {
-                    "literal": "others"
-                }
-            ],
-            "container-title": "Journal of statistical software",
-            "id": "pebesma2012spacetime",
-            "issue": "7",
-            "issued": {
-                "date-parts": [
-                    [
-                        2012
-                    ]
-                ]
-            },
-            "page": "1-30",
-            "title": "Spacetime: Spatio-temporal data in r",
-            "title-short": "Spacetime",
-            "type": "article-journal",
-            "volume": "51"
-        },
-        {
-            "author": [
-                {
-                    "family": "Gabadinho",
-                    "given": "Alexis"
-                },
-                {
-                    "family": "Ritschard",
-                    "given": "Gilbert"
-                },
-                {
-                    "family": "Studer",
-                    "given": "Matthias"
-                },
-                {
-                    "family": "Müller",
-                    "given": "Nicolas S"
-                }
-            ],
-            "container-title": "Geneva: Department of Econometrics and Laboratory of Demography, University of Geneva",
-            "id": "gabadinho2009mining",
-            "issued": {
-                "date-parts": [
-                    [
-                        2009
-                    ]
-                ]
-            },
-            "title": "Mining sequence data in r with the TraMineR package: A user’s guide",
-            "title-short": "Mining sequence data in r with the TraMineR package",
-            "type": "article-journal"
-        },
-        {
-            "author": [
-                {
-                    "family": "Cressie",
-                    "given": "Noel"
-                },
-                {
-                    "family": "Johannesson",
-                    "given": "Gardar"
-                }
-            ],
-            "container-title": "Journal of the Royal Statistical Society: Series B (Statistical Methodology)",
-            "id": "cressie2008fixed",
-            "issue": "1",
-            "issued": {
-                "date-parts": [
-                    [
-                        2008
-                    ]
-                ]
-            },
-            "page": "209-226",
-            "publisher": "Wiley Online Library",
-            "title": "Fixed rank kriging for very large spatial data sets",
-            "type": "article-journal",
-            "volume": "70"
-        },
-        {
-            "author": [
-                {
-                    "family": "Zammit-Mangion",
-                    "given": "Andrew"
-                },
-                {
-                    "family": "Cressie",
-                    "given": "Noel"
-                }
-            ],
-            "container-title": "arXiv preprint arXiv:1705.08105",
-            "id": "zammit2017frk",
-            "issued": {
-                "date-parts": [
-                    [
-                        2017
-                    ]
-                ]
-            },
-            "title": "FRK: An r package for spatial and spatio-temporal prediction with large datasets",
-            "title-short": "FRK",
-            "type": "article-journal"
-        },
-        {
-            "author": [
-                {
-                    "family": "Wikle",
-                    "given": "Christopher K"
-                },
-                {
-                    "family": "Zammit-Mangion",
-                    "given": "Andrew"
-                },
-                {
-                    "family": "Cressie",
-                    "given": "Noel"
-                }
-            ],
-            "id": "wikle2019spatio",
+            "id": "grolemund_wickham_2019_book",
             "issued": {
                 "date-parts": [
                     [
@@ -703,319 +687,8 @@
                     ]
                 ]
             },
-            "publisher": "CRC Press",
-            "title": "Spatio-temporal statistics with r",
-            "type": "book"
-        },
-        {
-            "author": [
-                {
-                    "family": "Wheeler",
-                    "given": "David"
-                },
-                {
-                    "family": "Tiefelsdorf",
-                    "given": "Michael"
-                }
-            ],
-            "container-title": "Journal of Geographical Systems",
-            "id": "wheeler2005multicollinearity",
-            "issue": "2",
-            "issued": {
-                "date-parts": [
-                    [
-                        2005
-                    ]
-                ]
-            },
-            "page": "161-187",
-            "publisher": "Springer",
-            "title": "Multicollinearity and correlation among local regression coefficients in geographically weighted regression",
-            "type": "article-journal",
-            "volume": "7"
-        },
-        {
-            "author": [
-                {
-                    "family": "Lu",
-                    "given": "Binbin"
-                },
-                {
-                    "family": "Harris",
-                    "given": "Paul"
-                },
-                {
-                    "family": "Charlton",
-                    "given": "Martin"
-                },
-                {
-                    "family": "Brunsdon",
-                    "given": "Chris"
-                }
-            ],
-            "container-title": "Geo-spatial Information Science",
-            "id": "lu2014gwmodel",
-            "issue": "2",
-            "issued": {
-                "date-parts": [
-                    [
-                        2014
-                    ]
-                ]
-            },
-            "page": "85-101",
-            "publisher": "Taylor & Francis",
-            "title": "The GWmodel r package: Further topics for exploring spatial heterogeneity using geographically weighted models",
-            "title-short": "The GWmodel r package",
-            "type": "article-journal",
-            "volume": "17"
-        },
-        {
-            "author": [
-                {
-                    "family": "Rowe",
-                    "given": "Francisco"
-                },
-                {
-                    "family": "Patias",
-                    "given": "Nikos"
-                },
-                {
-                    "family": "Arribas-Bel",
-                    "given": "Dani"
-                }
-            ],
-            "id": "rowe2020policy",
-            "issued": {
-                "date-parts": [
-                    [
-                        2020
-                    ]
-                ]
-            },
-            "title": "Policy brief: Neighbourhood change and trajectories of inequality in britain, 1971-2011",
-            "title-short": "Policy brief",
-            "type": "article-journal"
-        },
-        {
-            "author": [
-                {
-                    "family": "Brunsdon",
-                    "given": "Chris"
-                },
-                {
-                    "family": "Fotheringham",
-                    "given": "Stewart"
-                },
-                {
-                    "family": "Charlton",
-                    "given": "Martin"
-                }
-            ],
-            "container-title": "Journal of the Royal Statistical Society: Series D (The Statistician)",
-            "id": "brunsdon1998geographically",
-            "issue": "3",
-            "issued": {
-                "date-parts": [
-                    [
-                        1998
-                    ]
-                ]
-            },
-            "page": "431-443",
-            "publisher": "Wiley Online Library",
-            "title": "Geographically weighted regression",
-            "type": "article-journal",
-            "volume": "47"
-        },
-        {
-            "author": [
-                {
-                    "family": "Belsley",
-                    "given": "David A"
-                },
-                {
-                    "family": "Kuh",
-                    "given": "Edwin"
-                },
-                {
-                    "family": "Welsch",
-                    "given": "Roy E"
-                }
-            ],
-            "id": "belsley2005regression",
-            "issued": {
-                "date-parts": [
-                    [
-                        2005
-                    ]
-                ]
-            },
-            "publisher": "John Wiley & Sons",
-            "title": "Regression diagnostics: Identifying influential data and sources of collinearity",
-            "title-short": "Regression diagnostics",
-            "type": "book",
-            "volume": "571"
-        },
-        {
-            "author": [
-                {
-                    "family": "Comber",
-                    "given": "Alexis"
-                },
-                {
-                    "family": "Brunsdon",
-                    "given": "Chris"
-                },
-                {
-                    "family": "Charlton",
-                    "given": "Martin"
-                },
-                {
-                    "family": "Dong",
-                    "given": "Guanpeng"
-                },
-                {
-                    "family": "Harris",
-                    "given": "Rich"
-                },
-                {
-                    "family": "Lu",
-                    "given": "Binbin"
-                },
-                {
-                    "family": "Lü",
-                    "given": "Yihe"
-                },
-                {
-                    "family": "Murakami",
-                    "given": "Daisuke"
-                },
-                {
-                    "family": "Nakaya",
-                    "given": "Tomoki"
-                },
-                {
-                    "family": "Wang",
-                    "given": "Yunqiang"
-                },
-                {
-                    "literal": "others"
-                }
-            ],
-            "container-title": "arXiv preprint arXiv:2004.06070",
-            "id": "comber2020gwr",
-            "issued": {
-                "date-parts": [
-                    [
-                        2020
-                    ]
-                ]
-            },
-            "title": "The GWR route map: A guide to the informed application of geographically weighted regression",
-            "title-short": "The GWR route map",
-            "type": "article-journal"
-        },
-        {
-            "author": [
-                {
-                    "family": "Fotheringham",
-                    "given": "Stewart"
-                },
-                {
-                    "family": "Brunsdon",
-                    "given": "Chris"
-                },
-                {
-                    "family": "Charlton",
-                    "given": "Martin"
-                }
-            ],
-            "id": "Fotheringham_et_al_2002_book",
-            "issued": {
-                "date-parts": [
-                    [
-                        2002
-                    ]
-                ]
-            },
-            "publisher": "John Wiley & Sons",
-            "title": "Geographically weighted regression",
-            "type": "book"
-        },
-        {
-            "URL": "https://doi.org/10.1017/CBO9780511790942",
-            "author": [
-                {
-                    "family": "Gelman",
-                    "given": "Andrew"
-                },
-                {
-                    "family": "Hill",
-                    "given": "Jennifer"
-                }
-            ],
-            "id": "Gelman_Hill_2006_book",
-            "issued": {
-                "date-parts": [
-                    [
-                        2006
-                    ]
-                ]
-            },
-            "publisher": "Cambridge University Press",
-            "title": "Data analysis using regression and multilevel/hierarchical models. Cambridge university press.",
-            "type": "book"
-        },
-        {
-            "DOI": "",
-            "URL": "http://www.bristol.ac.uk/cmm/learning/online-course/course-topics.html#m04",
-            "accessed": {
-                "date-parts": [
-                    [
-                        2020,
-                        2,
-                        11
-                    ]
-                ]
-            },
-            "author": [
-                {
-                    "dropping-particle": "for",
-                    "family": "Multilevel Modelling",
-                    "given": "Centre"
-                }
-            ],
-            "id": "bristol2020",
-            "issued": {
-                "date-parts": []
-            },
-            "title": "Introduction to multilevel modelling",
-            "type": "webpage"
-        },
-        {
-            "URL": "https://uk.sagepub.com/en-gb/eur/multilevel-analysis/book234191",
-            "author": [
-                {
-                    "family": "Snijders",
-                    "given": "Tom"
-                },
-                {
-                    "family": "Bosker",
-                    "given": "Roel"
-                }
-            ],
-            "id": "Snijders_Bosker_2012_book",
-            "issued": {
-                "date-parts": [
-                    [
-                        2012
-                    ]
-                ]
-            },
-            "publisher": "Sage Publishing",
-            "title": "Multilevel analysis: An introduction to basic and advanced multilevel modeling",
-            "title-short": "Multilevel analysis",
+            "publisher": "O’Reilly, US",
+            "title": "R for data science",
             "type": "book"
         },
         {
@@ -1048,59 +721,6 @@
             "type": "book"
         },
         {
-            "URL": "https://r4ds.had.co.nz",
-            "author": [
-                {
-                    "family": "Grolemund",
-                    "given": "Garrett"
-                },
-                {
-                    "family": "Wickham",
-                    "given": "Hadley"
-                }
-            ],
-            "id": "grolemund_wickham_2019_book",
-            "issued": {
-                "date-parts": [
-                    [
-                        2019
-                    ]
-                ]
-            },
-            "publisher": "O’Reilly, US",
-            "title": "R for data science",
-            "type": "book"
-        },
-        {
-            "URL": "https://geocompr.robinlovelace.net",
-            "author": [
-                {
-                    "family": "Lovelace",
-                    "given": "Robin"
-                },
-                {
-                    "family": "Nowosad",
-                    "given": "Jakub"
-                },
-                {
-                    "family": "Muenchow",
-                    "given": "Jannes"
-                }
-            ],
-            "id": "Lovelace_et_al_2020_book",
-            "issued": {
-                "date-parts": [
-                    [
-                        2020
-                    ]
-                ]
-            },
-            "publisher": "CRC Press, R Series",
-            "title": "An introduction to statistical learning",
-            "type": "book",
-            "volume": "112"
-        },
-        {
             "author": [
                 {
                     "family": "Williamson",
@@ -1119,15 +739,40 @@
             "type": "manuscript"
         },
         {
-            "URL": "http://yihui.name/knitr/",
             "author": [
                 {
-                    "family": "Xie",
-                    "given": "Yihui"
+                    "family": "Banerjee",
+                    "given": "Sudipto"
+                },
+                {
+                    "family": "Carlin",
+                    "given": "Bradley P"
+                },
+                {
+                    "family": "Gelfand",
+                    "given": "Alan E"
                 }
             ],
-            "edition": "2nd",
-            "id": "xie2015",
+            "id": "banerjee2014hierarchical",
+            "issued": {
+                "date-parts": [
+                    [
+                        2014
+                    ]
+                ]
+            },
+            "publisher": "Crc Press",
+            "title": "Hierarchical modeling and analysis for spatial data",
+            "type": "book"
+        },
+        {
+            "author": [
+                {
+                    "family": "Cressie",
+                    "given": "Noel"
+                }
+            ],
+            "id": "cressie2015statistics",
             "issued": {
                 "date-parts": [
                     [
@@ -1135,11 +780,175 @@
                     ]
                 ]
             },
-            "note": "ISBN 978-1498716963",
-            "publisher": "Chapman; Hall/CRC",
-            "publisher-place": "Boca Raton, Florida",
-            "title": "Dynamic documents with R and knitr",
+            "publisher": "John Wiley & Sons",
+            "title": "Statistics for spatial data",
             "type": "book"
+        },
+        {
+            "URL": "http://www.alex-singleton.com/GDS_UA_2017/",
+            "author": [
+                {
+                    "family": "Singleton",
+                    "given": "Alex"
+                }
+            ],
+            "id": "gds_ua17",
+            "issued": {
+                "date-parts": [
+                    [
+                        2017
+                    ]
+                ]
+            },
+            "note": "Online course",
+            "title": "Geographic data science for urban analytics",
+            "type": "manuscript"
+        },
+        {
+            "author": [
+                {
+                    "family": "Gelman",
+                    "given": "Andrew"
+                },
+                {
+                    "family": "Hill",
+                    "given": "Jennifer"
+                }
+            ],
+            "id": "gelman2006data",
+            "issued": {
+                "date-parts": [
+                    [
+                        2006
+                    ]
+                ]
+            },
+            "publisher": "Cambridge University Press",
+            "title": "Data analysis using regression and multilevel/hierarchical models",
+            "type": "book"
+        },
+        {
+            "URL": "http://dx.doi.org/10.31219/osf.io/xcdms",
+            "author": [
+                {
+                    "family": "Rowe",
+                    "given": "Francisco"
+                },
+                {
+                    "family": "Lovelace",
+                    "given": "Robin"
+                },
+                {
+                    "family": "Dennett",
+                    "given": "Adam"
+                }
+            ],
+            "id": "rowe2022",
+            "issued": {
+                "date-parts": [
+                    [
+                        2022,
+                        7,
+                        22
+                    ]
+                ]
+            },
+            "title": "Spatial interaction modelling: A manifesto",
+            "title-short": "Spatial interaction modelling",
+            "type": ""
+        },
+        {
+            "author": [
+                {
+                    "family": "Fotheringham",
+                    "given": "A Stewart"
+                },
+                {
+                    "family": "O’Kelly",
+                    "given": "Morton E"
+                }
+            ],
+            "id": "fotheringham1989spatial",
+            "issued": {
+                "date-parts": [
+                    [
+                        1989
+                    ]
+                ]
+            },
+            "publisher": "Kluwer Academic Publishers Dordrecht",
+            "title": "Spatial interaction models: Formulations and applications",
+            "title-short": "Spatial interaction models",
+            "type": "book",
+            "volume": "1"
+        },
+        {
+            "author": [
+                {
+                    "family": "Rey",
+                    "given": "Sergio J."
+                },
+                {
+                    "family": "Arribas-Bel",
+                    "given": "Daniel"
+                },
+                {
+                    "family": "Wolf",
+                    "given": "Levi J."
+                }
+            ],
+            "id": "reyABwolf",
+            "issued": {
+                "date-parts": []
+            },
+            "publisher": "CRC press",
+            "status": "forthcoming",
+            "title": "Geographic data science with PySAL and the PyData stack",
+            "type": "book"
+        },
+        {
+            "URL": "http://darribas.org/sdar_mini",
+            "author": [
+                {
+                    "family": "Arribas-Bel",
+                    "given": "Dani"
+                }
+            ],
+            "container-title": "REGION",
+            "id": "arribas2014spatial",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2014
+                    ]
+                ]
+            },
+            "page": "R1",
+            "publisher": "European Regional Science Association",
+            "title": "Spatial data, analysis, and regression-a mini course",
+            "type": "article-journal",
+            "volume": "1"
+        },
+        {
+            "URL": "http://csiss.org/GISPopSci/workshops/2011/PSU/readings/W15_Anselin2007.pdf",
+            "author": [
+                {
+                    "family": "Anselin",
+                    "given": "Luc"
+                }
+            ],
+            "id": "anselin2005spatial",
+            "issued": {
+                "date-parts": [
+                    [
+                        2007
+                    ]
+                ]
+            },
+            "publisher": "Center for Spatially Integrated Social Science",
+            "title": "Spatial regression analysis in r–a workbook",
+            "type": "manuscript"
         },
         {
             "DOI": "https://doi.org/10.21105/jose.00042",
@@ -1162,47 +971,6 @@
             "title": "A course on geographic data science",
             "type": "article-journal",
             "volume": "2"
-        },
-        {
-            "author": [
-                {
-                    "family": "Anselin",
-                    "given": "Luc"
-                }
-            ],
-            "id": "anselin1988spatial",
-            "issued": {
-                "date-parts": [
-                    [
-                        1988
-                    ]
-                ]
-            },
-            "publisher": "Springer Science & Business Media",
-            "title": "Spatial econometrics: Methods and models",
-            "title-short": "Spatial econometrics",
-            "type": "book",
-            "volume": "4"
-        },
-        {
-            "URL": "http://csiss.org/GISPopSci/workshops/2011/PSU/readings/W15_Anselin2007.pdf",
-            "author": [
-                {
-                    "family": "Anselin",
-                    "given": "Luc"
-                }
-            ],
-            "id": "anselin2005spatial",
-            "issued": {
-                "date-parts": [
-                    [
-                        2007
-                    ]
-                ]
-            },
-            "publisher": "Center for Spatially Integrated Social Science",
-            "title": "Spatial regression analysis in r–a workbook",
-            "type": "manuscript"
         },
         {
             "author": [
@@ -1279,152 +1047,176 @@
             "type": "book"
         },
         {
+            "DOI": "10.17605/OSF.IO/VHY2P",
+            "URL": "https://osf.io/vhy2p/",
             "author": [
                 {
-                    "family": "Gelman",
-                    "given": "Andrew"
-                },
-                {
-                    "family": "Hill",
-                    "given": "Jennifer"
+                    "family": "Rowe",
+                    "given": "Francisco"
                 }
             ],
-            "id": "gelman2006data",
+            "container-title": "Open Science Framework",
+            "id": "rowe2022a",
             "issued": {
                 "date-parts": [
                     [
-                        2006
+                        2022,
+                        8,
+                        3
                     ]
                 ]
             },
-            "publisher": "Cambridge University Press",
-            "title": "Data analysis using regression and multilevel/hierarchical models",
+            "title": "Introduction to geographic data science",
+            "type": "article-journal"
+        },
+        {
+            "DOI": "",
+            "URL": "http://www.bristol.ac.uk/cmm/learning/online-course/course-topics.html#m04",
+            "accessed": {
+                "date-parts": [
+                    [
+                        2020,
+                        2,
+                        11
+                    ]
+                ]
+            },
+            "author": [
+                {
+                    "dropping-particle": "for",
+                    "family": "Multilevel Modelling",
+                    "given": "Centre"
+                }
+            ],
+            "id": "bristol2020",
+            "issued": {
+                "date-parts": []
+            },
+            "title": "Introduction to multilevel modelling",
+            "type": "webpage"
+        },
+        {
+            "author": [
+                {
+                    "family": "Fotheringham",
+                    "given": "Stewart"
+                },
+                {
+                    "family": "Brunsdon",
+                    "given": "Chris"
+                },
+                {
+                    "family": "Charlton",
+                    "given": "Martin"
+                }
+            ],
+            "id": "Fotheringham_et_al_2002_book",
+            "issued": {
+                "date-parts": [
+                    [
+                        2002
+                    ]
+                ]
+            },
+            "publisher": "John Wiley & Sons",
+            "title": "Geographically weighted regression",
             "type": "book"
         },
         {
-            "URL": "http://darribas.org/sdar_mini",
+            "DOI": "10.1111/gean.12316",
+            "URL": "http://dx.doi.org/10.1111/gean.12316",
             "author": [
                 {
-                    "family": "Arribas-Bel",
-                    "given": "Dani"
+                    "family": "Comber",
+                    "given": "Alexis"
+                },
+                {
+                    "family": "Brunsdon",
+                    "given": "Christopher"
+                },
+                {
+                    "family": "Charlton",
+                    "given": "Martin"
+                },
+                {
+                    "family": "Dong",
+                    "given": "Guanpeng"
+                },
+                {
+                    "family": "Harris",
+                    "given": "Richard"
+                },
+                {
+                    "family": "Lu",
+                    "given": "Binbin"
+                },
+                {
+                    "family": "Lü",
+                    "given": "Yihe"
+                },
+                {
+                    "family": "Murakami",
+                    "given": "Daisuke"
+                },
+                {
+                    "family": "Nakaya",
+                    "given": "Tomoki"
+                },
+                {
+                    "family": "Wang",
+                    "given": "Yunqiang"
+                },
+                {
+                    "family": "Harris",
+                    "given": "Paul"
                 }
             ],
-            "container-title": "REGION",
-            "id": "arribas2014spatial",
+            "container-title": "Geographical Analysis",
+            "id": "comber2022",
             "issue": "1",
             "issued": {
                 "date-parts": [
                     [
-                        2014
+                        2022,
+                        1,
+                        9
                     ]
                 ]
             },
-            "page": "R1",
-            "publisher": "European Regional Science Association",
-            "title": "Spatial data, analysis, and regression-a mini course",
+            "language": "en",
+            "page": "155-178",
+            "title": "A Route Map for Successful Applications of Geographically Weighted Regression",
             "type": "article-journal",
-            "volume": "1"
-        },
-        {
-            "URL": "https://www.R-project.org/",
-            "author": [
-                {
-                    "literal": "R Core Team"
-                }
-            ],
-            "id": "R-base",
-            "issued": {
-                "date-parts": [
-                    [
-                        2015
-                    ]
-                ]
-            },
-            "publisher": "R Foundation for Statistical Computing",
-            "publisher-place": "Vienna, Austria",
-            "title": "R: A language and environment for statistical computing",
-            "title-short": "R",
-            "type": "book"
-        },
-        {
-            "URL": "http://CRAN.R-project.org/package=rmarkdown",
-            "author": [
-                {
-                    "family": "Allaire",
-                    "given": "JJ"
-                },
-                {
-                    "family": "Cheng",
-                    "given": "Joe"
-                },
-                {
-                    "family": "Xie",
-                    "given": "Yihui"
-                },
-                {
-                    "family": "McPherson",
-                    "given": "Jonathan"
-                },
-                {
-                    "family": "Chang",
-                    "given": "Winston"
-                },
-                {
-                    "family": "Allen",
-                    "given": "Jeff"
-                },
-                {
-                    "family": "Wickham",
-                    "given": "Hadley"
-                },
-                {
-                    "family": "Atkins",
-                    "given": "Aron"
-                },
-                {
-                    "family": "Hyndman",
-                    "given": "Rob"
-                }
-            ],
-            "id": "R-rmarkdown",
-            "issued": {
-                "date-parts": [
-                    [
-                        2016
-                    ]
-                ]
-            },
-            "note": "R package version 0.9.5",
-            "title": "Rmarkdown: Dynamic documents for r",
-            "title-short": "Rmarkdown",
-            "type": "book"
+            "volume": "55"
         },
         {
             "author": [
                 {
-                    "family": "Bivand",
-                    "given": "Roger S"
+                    "family": "Belsley",
+                    "given": "David A"
                 },
                 {
-                    "family": "Pebesma",
-                    "given": "Edzer"
+                    "family": "Kuh",
+                    "given": "Edwin"
                 },
                 {
-                    "family": "Gómez-Rubio",
-                    "given": "Virgilio"
+                    "family": "Welsch",
+                    "given": "Roy E"
                 }
             ],
-            "id": "bivand2013applied",
+            "id": "belsley2005regression",
             "issued": {
                 "date-parts": [
                     [
-                        2013
+                        2005
                     ]
                 ]
             },
-            "publisher": "Springer New York",
-            "title": "Applied spatial data analysis with r",
-            "type": "book"
+            "publisher": "John Wiley & Sons",
+            "title": "Regression diagnostics: Identifying influential data and sources of collinearity",
+            "title-short": "Regression diagnostics",
+            "type": "book",
+            "volume": "571"
         },
         {
             "author": [
@@ -1433,38 +1225,88 @@
                     "given": "Chris"
                 },
                 {
-                    "family": "Comber",
-                    "given": "Lex"
+                    "family": "Fotheringham",
+                    "given": "Stewart"
+                },
+                {
+                    "family": "Charlton",
+                    "given": "Martin"
                 }
             ],
-            "id": "comber2015",
+            "container-title": "Journal of the Royal Statistical Society: Series D (The Statistician)",
+            "id": "brunsdon1998geographically",
+            "issue": "3",
             "issued": {
                 "date-parts": [
                     [
-                        2015
+                        1998
                     ]
                 ]
             },
-            "publisher": "Sage",
-            "title": "An introduction to r for spatial analysis & mapping",
-            "type": "book"
+            "page": "431-443",
+            "publisher": "Wiley Online Library",
+            "title": "Geographically weighted regression",
+            "type": "article-journal",
+            "volume": "47"
+        },
+        {
+            "DOI": "10.1111/geoj.12420",
+            "URL": "http://dx.doi.org/10.1111/geoj.12420",
+            "author": [
+                {
+                    "family": "Patias",
+                    "given": "Nikos"
+                },
+                {
+                    "family": "Rowe",
+                    "given": "Francisco"
+                },
+                {
+                    "family": "Arribas-Bel",
+                    "given": "Dani"
+                }
+            ],
+            "container-title": "The Geographical Journal",
+            "id": "patias2021",
+            "issue": "2",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021,
+                        12,
+                        2
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "150-165",
+            "title": "Trajectories of neighbourhood inequality in Britain: Unpacking inter-regional socioeconomic imbalances, 1971-2011",
+            "title-short": "Trajectories of neighbourhood inequality in Britain",
+            "type": "article-journal",
+            "volume": "188"
         },
         {
             "author": [
                 {
-                    "family": "Banerjee",
-                    "given": "Sudipto"
+                    "family": "Lu",
+                    "given": "Binbin"
                 },
                 {
-                    "family": "Carlin",
-                    "given": "Bradley P"
+                    "family": "Harris",
+                    "given": "Paul"
                 },
                 {
-                    "family": "Gelfand",
-                    "given": "Alan E"
+                    "family": "Charlton",
+                    "given": "Martin"
+                },
+                {
+                    "family": "Brunsdon",
+                    "given": "Chris"
                 }
             ],
-            "id": "banerjee2014hierarchical",
+            "container-title": "Geo-spatial Information Science",
+            "id": "lu2014gwmodel",
+            "issue": "2",
             "issued": {
                 "date-parts": [
                     [
@@ -1472,65 +1314,53 @@
                     ]
                 ]
             },
-            "publisher": "Crc Press",
-            "title": "Hierarchical modeling and analysis for spatial data",
-            "type": "book"
+            "page": "85-101",
+            "publisher": "Taylor & Francis",
+            "title": "The GWmodel r package: Further topics for exploring spatial heterogeneity using geographically weighted models",
+            "title-short": "The GWmodel r package",
+            "type": "article-journal",
+            "volume": "17"
         },
         {
             "author": [
+                {
+                    "family": "Wheeler",
+                    "given": "David"
+                },
+                {
+                    "family": "Tiefelsdorf",
+                    "given": "Michael"
+                }
+            ],
+            "container-title": "Journal of Geographical Systems",
+            "id": "wheeler2005multicollinearity",
+            "issue": "2",
+            "issued": {
+                "date-parts": [
+                    [
+                        2005
+                    ]
+                ]
+            },
+            "page": "161-187",
+            "publisher": "Springer",
+            "title": "Multicollinearity and correlation among local regression coefficients in geographically weighted regression",
+            "type": "article-journal",
+            "volume": "7"
+        },
+        {
+            "author": [
+                {
+                    "family": "Zammit-Mangion",
+                    "given": "Andrew"
+                },
                 {
                     "family": "Cressie",
                     "given": "Noel"
                 }
             ],
-            "id": "cressie2015statistics",
-            "issued": {
-                "date-parts": [
-                    [
-                        2015
-                    ]
-                ]
-            },
-            "publisher": "John Wiley & Sons",
-            "title": "Statistics for spatial data",
-            "type": "book"
-        },
-        {
-            "URL": "https://github.com/Robinlovelace/Creating-maps-in-R",
-            "abstract": "This tutorial is an introduction to spatial data in R and map making with R’s “base” graphics and the popular graphics package ggplot2. It assumes no prior knowledge of spatial data analysis but prior understanding of the R command line would be beneficial. For people new to R, we recommend working through an “Introduction to R” type tutorial, such as \"A (very) short introduction to R\" (Torfs and Brauer, 2012) or the more geographically inclined \"Short introduction to R\" (Harris, 2012). Building on such background material, the following set of exercises is concerned with specific functions for spatial data and visualisation. It is divided into five parts: *Introduction, which provides a guide to R’s syntax and preparing for the tutorial *Spatial data in R, which describes basic spatial functions in R *Manipulating spatial data, which includes changing projection, clipping and spatial joins *Map making with ggplot2, a recent graphics package for producing beautiful maps quickly *Taking spatial analysis in R further, a compilation of resources for furthering your skills An up-to-date version of this tutorial is maintained at https://github.com/Robinlovelace/Creating-maps-in-R and the entire tutorial, including the input data can be downloaded as a zip file, as described below. The entire tutorialwas written in RMarkdown, which allows R code to run as the document compiles. Thus all the examples are entirely reproducible. Suggested improvements welcome - please fork, improve and push this document to its original home to ensure its longevity. The tutorial was developed for a series of Short Courses put on by the National Centre for Research Methods, via the TALISMAN node (see geotalisman.org).",
-            "author": [
-                {
-                    "family": "Lovelace",
-                    "given": "Robin"
-                },
-                {
-                    "family": "Cheshire",
-                    "given": "James"
-                }
-            ],
-            "container-title": "National Centre for Research Methods Working Papers",
-            "id": "lovelace2014introduction",
-            "issue": "03",
-            "issued": {
-                "date-parts": [
-                    [
-                        2014
-                    ]
-                ]
-            },
-            "title": "Introduction to visualising spatial data in R",
-            "type": "article-journal",
-            "volume": "14"
-        },
-        {
-            "URL": "http://www.alex-singleton.com/GDS_UA_2017/",
-            "author": [
-                {
-                    "family": "Singleton",
-                    "given": "Alex"
-                }
-            ],
-            "id": "gds_ua17",
+            "container-title": "arXiv preprint arXiv:1705.08105",
+            "id": "zammit2017frk",
             "issued": {
                 "date-parts": [
                     [
@@ -1538,9 +1368,145 @@
                     ]
                 ]
             },
-            "note": "Online course",
-            "title": "Geographic data science for urban analytics",
-            "type": "manuscript"
+            "title": "FRK: An r package for spatial and spatio-temporal prediction with large datasets",
+            "title-short": "FRK",
+            "type": "article-journal"
+        },
+        {
+            "author": [
+                {
+                    "family": "Wikle",
+                    "given": "Christopher K"
+                },
+                {
+                    "family": "Zammit-Mangion",
+                    "given": "Andrew"
+                },
+                {
+                    "family": "Cressie",
+                    "given": "Noel"
+                }
+            ],
+            "id": "wikle2019spatio",
+            "issued": {
+                "date-parts": [
+                    [
+                        2019
+                    ]
+                ]
+            },
+            "publisher": "CRC Press",
+            "title": "Spatio-temporal statistics with r",
+            "type": "book"
+        },
+        {
+            "author": [
+                {
+                    "family": "Cressie",
+                    "given": "Noel"
+                },
+                {
+                    "family": "Johannesson",
+                    "given": "Gardar"
+                }
+            ],
+            "container-title": "Journal of the Royal Statistical Society: Series B (Statistical Methodology)",
+            "id": "cressie2008fixed",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2008
+                    ]
+                ]
+            },
+            "page": "209-226",
+            "publisher": "Wiley Online Library",
+            "title": "Fixed rank kriging for very large spatial data sets",
+            "type": "article-journal",
+            "volume": "70"
+        },
+        {
+            "author": [
+                {
+                    "family": "Pebesma",
+                    "given": "Edzer"
+                },
+                {
+                    "literal": "others"
+                }
+            ],
+            "container-title": "Journal of statistical software",
+            "id": "pebesma2012spacetime",
+            "issue": "7",
+            "issued": {
+                "date-parts": [
+                    [
+                        2012
+                    ]
+                ]
+            },
+            "page": "1-30",
+            "title": "Spacetime: Spatio-temporal data in r",
+            "title-short": "Spacetime",
+            "type": "article-journal",
+            "volume": "51"
+        },
+        {
+            "author": [
+                {
+                    "family": "Gabadinho",
+                    "given": "Alexis"
+                },
+                {
+                    "family": "Ritschard",
+                    "given": "Gilbert"
+                },
+                {
+                    "family": "Studer",
+                    "given": "Matthias"
+                },
+                {
+                    "family": "Müller",
+                    "given": "Nicolas S"
+                }
+            ],
+            "container-title": "Geneva: Department of Econometrics and Laboratory of Demography, University of Geneva",
+            "id": "gabadinho2009mining",
+            "issued": {
+                "date-parts": [
+                    [
+                        2009
+                    ]
+                ]
+            },
+            "title": "Mining sequence data in r with the TraMineR package: A user’s guide",
+            "title-short": "Mining sequence data in r with the TraMineR package",
+            "type": "article-journal"
+        },
+        {
+            "author": [
+                {
+                    "family": "Hyndman",
+                    "given": "Rob J"
+                },
+                {
+                    "family": "Athanasopoulos",
+                    "given": "George"
+                }
+            ],
+            "id": "hyndman2018forecasting",
+            "issued": {
+                "date-parts": [
+                    [
+                        2018
+                    ]
+                ]
+            },
+            "publisher": "OTexts",
+            "title": "Forecasting: Principles and practice",
+            "title-short": "Forecasting",
+            "type": "book"
         }
     ],
     "project_biblios": [

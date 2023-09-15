@@ -1,20 +1,4 @@
----
-title: Spatial heterogeneity
-jupyter:
-  jupytext:
-    text_representation:
-      extension: .qmd
-      format_name: quarto
-      format_version: '1.0'
-      jupytext_version: 1.14.5
-  kernelspec:
-    display_name: R
-    language: R
-    name: ir
----
-
-
-
+# Spatial heterogeneity
 
 ## Dependencies
 

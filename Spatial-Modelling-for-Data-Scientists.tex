@@ -227,7 +227,7 @@
 
 \begin{document}
 \maketitle
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[colback={shadecolor}, frame hidden, breakable, boxrule=0pt, enhanced]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[breakable, colback={shadecolor}, frame hidden, boxrule=0pt, enhanced]}{\end{tcolorbox}}\fi
 
 \bookmarksetup{startatroot}
 
@@ -248,7 +248,9 @@ updated during 2023.
 \hypertarget{framing-this-book}{%
 \chapter{Framing this book}\label{framing-this-book}}
 
-Vision of the book
+\hypertarget{aim-vision-and-content-of-book}{%
+\section{Aim / vision and content of
+book}\label{aim-vision-and-content-of-book}}
 
 \begin{itemize}
 \item
@@ -257,6 +259,36 @@ Vision of the book
 \item
   Fit into the broader ecosystem
 \end{itemize}
+
+\hypertarget{how-we-have-written}{%
+\section{How we have written}\label{how-we-have-written}}
+
+\begin{itemize}
+\item
+  open book
+\item
+  reproducible
+\item
+  why R
+\end{itemize}
+
+\hypertarget{who-is-this-book-for}{%
+\section{Who is this book for}\label{who-is-this-book-for}}
+
+\begin{itemize}
+\item
+  For data scientists
+\item
+  For social scientists
+\item
+  Language we use to reach these audiences
+\item
+  Graduate level
+\end{itemize}
+
+\hypertarget{how-this-book-fits-within-the-broader-spatial-data-analysis-ecosystem}{%
+\section{How this book fits within the broader spatial data analysis
+ecosystem}\label{how-this-book-fits-within-the-broader-spatial-data-analysis-ecosystem}}
 
 \hypertarget{embedding-space}{%
 \chapter{Embedding space}\label{embedding-space}}
@@ -285,8 +317,8 @@ modelling methods that we cover in this book.
 }
 
 \caption{Fig. 1. Data Types. Area / Lattice data source: Önnerfors et
-al. (2019). Point data source: (\textbf{tao2018?}). Flow data source:
-(\textbf{rowe2020?}). Trajectory data source: Kwan and Lee (2004).}
+al. (2019). Point data source: Tao et al. (2018). Flow data source: Rowe
+and Patias (2020). Trajectory data source: Kwan and Lee (2004).}
 
 \end{figure}
 
@@ -319,7 +351,7 @@ data and implicit trajectory data. The former refer to well-structured
 data and record positions of objects continuously and intensively at
 uniform time intervals, such as GPS data. The latter is less structured
 and record data in relatively time point intervals, including
-sensor-based, network-based and signal-based data (\textbf{kong2018?}).
+sensor-based, network-based and signal-based data (Kong et al. 2018).
 
 In this course, we cover analytical and modelling approaches for point,
 lattice/areal and flow data. While we do not explicitly analyse
@@ -407,7 +439,7 @@ MAUP are normally recognised in empirical analysis relating to
 }
 
 \caption{Fig. 2. MAUP effect. (a) scale effect; and, (b) zonation
-effect. Source: (\textbf{loidl2016?}).}
+effect. Source: Loidl et al. (2016).}
 
 \end{figure}
 
@@ -426,22 +458,23 @@ capture long-distance migration. And it is well documented that these
 types of moves are driven by different factors. While residential
 mobility tends to be driven by housing related reasons, long-distance
 migration is more closely related to employment-related motives
-(\textbf{niedomysl2011?}).
+(Niedomysl 2011).
 
 An alternative approach is to use the smallest geographical system
 available and create random aggregations at various geographical scales,
 to directly quantify the extent of scale and zonation. This approach has
 shown promising results in applications to study internal migration
-flows (\textbf{stillwell2018?}). Another approach involves the
+flows (Stillwell, Daras, and Bell 2018). Another approach involves the
 production of ``meaningful'' or functional geographies that can more
 appropriately capture the process of interest. There is an active area
-of work defining functional labour markets (\textbf{casado-díaz2017?}),
-urban areas (\textbf{arribas-bel2021?}) and various forms of
-geodemographic classifications (\textbf{singleton2013?};
-\textbf{patias2019?}) . However there is the recognition that none of
-the existing approaches resolve the effects of the MAUP and recently it
-has been suggested that the most plausible `solution' would be to ignore
-the MAUP (\textbf{wolf2020?}).
+of work defining functional labour markets (Casado-Díaz,
+Martínez-Bernabéu, and Rowe 2017), urban areas (Daniel Arribas-Bel,
+Garcia-López, and Viladecans-Marsal 2021) and various forms of
+geodemographic classifications (A. D. Singleton and Spielman 2013;
+Patias, Rowe, and Cavazzi 2019) . However there is the recognition that
+none of the existing approaches resolve the effects of the MAUP and
+recently it has been suggested that the most plausible `solution' would
+be to ignore the MAUP (Wolf et al. 2020).
 
 \hypertarget{ecological-fallacy}{%
 \subsection{Ecological Fallacy}\label{ecological-fallacy}}
@@ -537,9 +570,9 @@ The chapter is based on:
   Williamson (2018), some examples from the first lecture of ENVS450 are
   used to explain the various types of random variables.
 \item
-  (\textbf{lovelace2019?}), a really good book on handling spatial data
-  and historical background of the evolution of R packages for spatial
-  data analysis.
+  Lovelace, Nowosad, and Muenchow (2019), a really good book on handling
+  spatial data and historical background of the evolution of R packages
+  for spatial data analysis.
 \end{itemize}
 
 \hypertarget{dependencies}{%
@@ -1618,9 +1651,9 @@ has various purposedly designed \textbf{packages} for manipulation of
 spatial data and spatial analysis techniques. Various R packages exist
 in CRAN eg. \texttt{spatial}, \texttt{sgeostat}, \texttt{splancs},
 \texttt{maptools}, \texttt{tmap}, \texttt{rgdal}, \texttt{spand} and
-more recent development of \texttt{sf} - see (\textbf{lovelace2019?})
-for a great description and historical context for some of these
-packages.
+more recent development of \texttt{sf} - see Lovelace, Nowosad, and
+Muenchow (2019) for a great description and historical context for some
+of these packages.
 
 During this session, we will use \texttt{sf}.
 
@@ -1987,8 +2020,8 @@ tm\_arrange & display multiple maps in a single ``metaplot'' \\
 
 \part{Part II}
 
-\hypertarget{point-data-analysis}{%
-\chapter{Point data analysis}\label{point-data-analysis}}
+\hypertarget{point-patterns}{%
+\chapter{Point patterns}\label{point-patterns}}
 
 This chapter is based on the following references, which are great
 follow-up's on the topic:
@@ -1996,13 +2029,13 @@ follow-up's on the topic:
 \begin{itemize}
 \tightlist
 \item
-  (\textbf{lovelace2019?}) offer a great introduction.
+  Lovelace, Nowosad, and Muenchow (2019) offer a great introduction.
 \item
   Chapter 6 of Brunsdon and Comber (2015), in particular subsections 6.3
   and 6.7.
 \item
-  (\textbf{bivand2013?}) provides an in-depth treatment of spatial data
-  in R.
+  Bivand, Pebesma, and Gómez-Rubio (2013) provides an in-depth treatment
+  of spatial data in R.
 \end{itemize}
 
 \hypertarget{dependencies-1}{%
@@ -2777,13 +2810,14 @@ follow-up's on the topic:
 \begin{itemize}
 \tightlist
 \item
-  (\textbf{fotheringham1989spatial?}) offer a historical overview of
+  A. S. Fotheringham and O'Kelly (1989) offer a historical overview of
   spatial interaction models and illustration of use cases.
 \item
-  (\textbf{rowe2022?}) provide a good overview of the existing
-  limitations and opportunities of spatial interaction modelling.
+  Rowe, Lovelace, and Dennett (2022) provide a good overview of the
+  existing limitations and opportunities of spatial interaction
+  modelling.
 \item
-  Singleton (2017), an online short course on R for Geographic Data
+  A. Singleton (2017), an online short course on R for Geographic Data
   Science and Urban Analytics. In particular, the section on
   \href{https://github.com/alexsingleton/GDS_UA_2017/tree/master/Mapping_Flows}{mapping
   flows} is specially relevant here.
@@ -4093,15 +4127,15 @@ follow-up's on the topic:
   11} of the GDS Book, by Rey, Arribas-Bel, and Wolf (forthcoming).
 \item
   \href{http://darribas.org/sdar_mini/notes/Class_03.html}{Session III}
-  of Arribas-Bel (2014). Check the ``Related readings'' section on the
-  session page for more in-depth discussions.
+  of Dani Arribas-Bel (2014). Check the ``Related readings'' section on
+  the session page for more in-depth discussions.
 \item
   Anselin (2007), freely available to download
   {[}\href{https://dces.wisc.edu/wp-content/uploads/sites/128/2013/08/W14_Anselin2007.pdf}{\texttt{pdf}}{]}.
 \item
   The second part of this tutorial assumes you have reviewed
   \href{https://darribas.org/gds_course/content/bE/concepts_E.html}{Block
-  E} of Arribas-Bel (2019).
+  E} of Dani Arribas-Bel (2019).
 \end{itemize}
 
 \hypertarget{dependencies-3}{%
@@ -4120,18 +4154,98 @@ included in \textbf{?@sec-dependencies}:
 \FunctionTok{library}\NormalTok{(stringr)}
 \CommentTok{\# Spatial Data management}
 \FunctionTok{library}\NormalTok{(rgdal)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+Loading required package: sp
+\end{verbatim}
+
+\begin{verbatim}
+Please note that rgdal will be retired by the end of 2023,
+plan transition to sf/stars/terra functions using GDAL and PROJ
+at your earliest convenience.
+
+rgdal: version: 1.5-30, (SVN revision 1171)
+Geospatial Data Abstraction Library extensions to R successfully loaded
+Loaded GDAL runtime: GDAL 3.4.2, released 2022/03/08
+Path to GDAL shared files: /Library/Frameworks/R.framework/Versions/4.2/Resources/library/rgdal/gdal
+GDAL binary built with GEOS: FALSE 
+Loaded PROJ runtime: Rel. 8.2.1, January 1st, 2022, [PJ_VERSION: 821]
+Path to PROJ shared files: /Library/Frameworks/R.framework/Versions/4.2/Resources/library/rgdal/proj
+PROJ CDN enabled: FALSE
+Linking to sp version:1.4-6
+To mute warnings of possible GDAL/OSR exportToProj4() degradation,
+use options("rgdal_show_exportToProj4_warnings"="none") before loading sp or rgdal.
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
 \CommentTok{\# Pretty graphics}
 \FunctionTok{library}\NormalTok{(ggplot2)}
 \CommentTok{\# Pretty maps}
 \FunctionTok{library}\NormalTok{(ggmap)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+i Google's Terms of Service: <https://mapsplatform.google.com>
+\end{verbatim}
+
+\begin{verbatim}
+i Please cite ggmap if you use it! Use `citation("ggmap")` for details.
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
 \CommentTok{\# For all your interpolation needs}
 \FunctionTok{library}\NormalTok{(gstat)}
 \CommentTok{\# For data manipulation}
 \FunctionTok{library}\NormalTok{(dplyr)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+
+Attaching package: 'dplyr'
+\end{verbatim}
+
+\begin{verbatim}
+The following objects are masked from 'package:stats':
+
+    filter, lag
+\end{verbatim}
+
+\begin{verbatim}
+The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
 \CommentTok{\# Spatial regression}
 \FunctionTok{library}\NormalTok{(spdep)}
 \end{Highlighting}
 \end{Shaded}
+
+\begin{verbatim}
+Loading required package: spData
+\end{verbatim}
+
+\begin{verbatim}
+To access larger datasets in this package, install the spDataLarge
+package with: `install.packages('spDataLarge',
+repos='https://nowosad.github.io/drat/', type='source')`
+\end{verbatim}
+
+\begin{verbatim}
+Loading required package: sf
+\end{verbatim}
+
+\begin{verbatim}
+Linking to GEOS 3.10.2, GDAL 3.4.2, PROJ 8.2.1; sf_use_s2() is TRUE
+\end{verbatim}
 
 Before we start any analysis, let us set the path to the directory where
 we are working. We can easily do that with \texttt{setwd()}. Please
@@ -4380,8 +4494,625 @@ treatments of the topics introduced here, the reader is referred to
 Anselin (2003), Anselin and Rey (2014), and Gibbons, Overman, and
 Patacchini (2014).
 
+\hypertarget{spatial-dependence-2}{%
+\section{Spatial dependence}\label{spatial-dependence-2}}
+
+As we have just discussed, SH is about effects of phenomena that are
+\emph{explicitly linked} to geography and that hence cause spatial
+variation and clustering of values. This encompasses many of the kinds
+of spatial effects we may be interested in when we fit linear
+regressions. However, in other cases, our interest is on the effect of
+the \emph{spatial configuration} of the observations, and the extent to
+which that has an effect on the outcome we are considering. For example,
+we might think that the price of a house not only depends on the number
+of bathrooms it has but, if we take number of bathrooms as a proxy for
+size and status, also whether it is surrounded by other houses with many
+bathrooms. This kind of spatial effect is fundamentally different from
+SH in that is it not related to inherent characteristics of the
+geography but relates to the characteristics of the observations in our
+dataset and, specially, to their spatial arrangement. We call this
+phenomenon by which the values of observations are related to each other
+through distance \emph{spatial dependence} (Anselin 1988).
+
+\textbf{Spatial Weights}
+
+There are several ways to introduce spatial dependence in an econometric
+framework, with varying degrees of econometric sophistication (see
+Anselin 2003 for a good overview). Common to all of them however is the
+way space is formally encapsulated: through \emph{spatial weights
+matrices (}\(W\))\footnote{If you need to refresh your knowledge on
+  spatial weight matrices, check
+  \href{https://darribas.org/gds_course/content/bE/concepts_E.html}{Block
+  E} of Dani Arribas-Bel (2019);
+  \href{https://geographicdata.science/book/notebooks/04_spatial_weights.html}{Chapter
+  4} of Rey, Arribas-Bel, and Wolf (forthcoming); or the
+  \href{https://fcorowe.github.io/intro-gds/03-spatial_weights.html}{Spatial
+  Weights} Section of Rowe (2022).} These are \(NxN\) matrices with zero
+diagonals and every \(w_{ij}\) cell with a value that represents the
+degree of spatial connectivity/interaction between observations \(i\)
+and \(j\). If they are not connected at all, \(w_{ij}=0\), otherwise
+\(w_{ij}>0\) and we call \(i\) and \(j\) neighbors. The exact value in
+the latter case depends on the criterium we use to define neighborhood
+relations. These matrices also tend to be row-standardized so the sum of
+each row equals to one.
+
+A related concept to spatial weight matrices is that of \emph{spatial
+lag}. This is an operator that multiplies a given variable \(y\) by a
+spatial weight matrix:
+
+\[
+y_{lag} = W y
+\]
+
+If \(W\) is row-standardized, \(y_{lag}\) is effectively the average
+value of \(y\) in the neighborhood of each observation. The individual
+notation may help clarify this:
+
+\[
+y_{lag-i} = \displaystyle \sum_j w_{ij} y_j
+\]
+
+where \(y_{lag-i}\) is the spatial lag of variable \(y\) at location
+\(i\), and \(j\) sums over the entire dataset. If \(W\) is
+row-standardized, \(y_{lag-i}\) becomes an average of \(y\) weighted by
+the spatial criterium defined in \(W\).
+
+Given that spatial weights matrices are not the focus of this tutorial,
+we will stick to a very simple case. Since we are dealing with points,
+we will use \(K\)-nn weights, which take the \(k\) nearest neighbors of
+each observation as neighbors and assign a value of one, assigning
+everyone else a zero. We will use \(k=50\) to get a good degree of
+variation and sensible results.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Create knn list of each house}
+\NormalTok{hnn }\OtherTok{\textless{}{-}}\NormalTok{ db }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{st\_coordinates}\NormalTok{() }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{as.matrix}\NormalTok{() }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{knearneigh}\NormalTok{(}\AttributeTok{k =} \DecValTok{50}\NormalTok{)}
+\CommentTok{\# Create nb object}
+\NormalTok{hnb }\OtherTok{\textless{}{-}} \FunctionTok{knn2nb}\NormalTok{(hnn)}
+\CommentTok{\# Create spatial weights matrix (note it row{-}standardizes by default)}
+\NormalTok{hknn }\OtherTok{\textless{}{-}} \FunctionTok{nb2listw}\NormalTok{(hnb)}
+\end{Highlighting}
+\end{Shaded}
+
+We can inspect the weights created by simply typing the name of the
+object:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{hknn}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+Characteristics of weights list object:
+Neighbour list object:
+Number of regions: 6110 
+Number of nonzero links: 305500 
+Percentage nonzero weights: 0.8183306 
+Average number of links: 50 
+Non-symmetric neighbours list
+
+Weights style: W 
+Weights constants summary:
+     n       nn   S0       S1       S2
+W 6110 37332100 6110 220.5032 24924.44
+\end{verbatim}
+
+\textbf{Exogenous spatial effects}
+
+Let us come back to the house price example we have been working with.
+So far, we have hypothesized that the price of an AirBnb property in San
+Diego can be explained using information about its own characteristics,
+and the neighbourhood it belongs to. However, we can hypothesise that
+the price of a house is also affected by the characteristics of the
+houses surrounding it. Considering it as a proxy for larger and more
+luxurious houses, we will use the number of bathrooms of neighboring
+houses as an additional explanatory variable. This represents the most
+straightforward way to introduce spatial dependence in a regression, by
+considering not only a given explanatory variable, but also its spatial
+lag.
+
+In our example case, in addition to including the number of bathrooms of
+the property, we will include its spatial lag. In other words, we will
+be saying that it is not only the number of bathrooms in a house but
+also that of the surrounding properties that helps explain the final
+price at which a house is advertised for. Mathematically, this implies
+estimating the following model:
+
+\[
+\log(P_i) = \alpha + \beta_1 Acc_i + \beta_2 Bath_i + \beta_3 Bedr_i + \beta_4 Beds_i+ \beta_5 Bath_{lag-i} + \epsilon_i
+\]
+
+Let us first compute the spatial lag of \texttt{bathrooms}:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{db}\SpecialCharTok{$}\NormalTok{w\_bathrooms }\OtherTok{\textless{}{-}} \FunctionTok{lag.listw}\NormalTok{(hknn, db}\SpecialCharTok{$}\NormalTok{bathrooms)}
+\end{Highlighting}
+\end{Shaded}
+
+And then we can include it in our previous specification. Note that we
+apply the log to the lag, not the reverse:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{m5 }\OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(}
+  \StringTok{\textquotesingle{}log\_price \textasciitilde{} accommodates + bedrooms + beds + bathrooms + w\_bathrooms\textquotesingle{}}\NormalTok{,}
+\NormalTok{  db}
+\NormalTok{)}
+
+\FunctionTok{summary}\NormalTok{(m5)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+
+Call:
+lm(formula = "log_price ~ accommodates + bedrooms + beds + bathrooms + w_bathrooms", 
+    data = db)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-2.8869 -0.3243 -0.0206  0.2931  3.5132 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept)   3.579448   0.032337 110.692   <2e-16 ***
+accommodates  0.173226   0.005233  33.100   <2e-16 ***
+bedrooms      0.103116   0.012327   8.365   <2e-16 ***
+beds         -0.075071   0.007787  -9.641   <2e-16 ***
+bathrooms     0.117268   0.012507   9.376   <2e-16 ***
+w_bathrooms   0.353021   0.023572  14.976   <2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.5271 on 6104 degrees of freedom
+Multiple R-squared:  0.574, Adjusted R-squared:  0.5736 
+F-statistic:  1645 on 5 and 6104 DF,  p-value: < 2.2e-16
+\end{verbatim}
+
+As we can see, the lag is not only significative and positive, but its
+effect seems to be even larger that that of the property itself. Taken
+literally, this implies that the average number of bathrooms in AirBnb's
+nearby has a larger effect on the final price of a given AirBnb than its
+own number of bathrooms. There are several ways to interpret this. One
+is that, if we take the spatial lag of bathrooms, as we said above, to
+be a proxy for the types of houses surrounding a property, this is
+probably a better predictor of how wealthy an area is than the number of
+bathrooms of a single property, which is more variable. If we also
+assume that the area where an AirBnb is located has a bigger effect on
+price than the number of bathrooms, we can start seeing an answer to the
+apparent puzzle.
+
+\textbf{A note on more advanced spatial regression}
+
+Introducing a spatial lag of an explanatory variable, as we have just
+seen, is the most straightforward way of incorporating the notion of
+spatial dependence in a linear regression framework. It does not require
+additional changes, it can be estimated with OLS, and the interpretation
+is rather similar to interpreting non-spatial variables. The field of
+spatial econometrics however is a much broader one and has produced over
+the last decades many techniques to deal with spatial effects and
+spatial dependence in different ways. Although this might be an over
+simplification, one can say that most of such efforts for the case of a
+single cross-section are focused on two main variations: the spatial lag
+and the spatial error model. Both are similar to the case we have seen
+in that they are based on the introduction of a spatial lag, but they
+differ in the component of the model they modify and affect.
+
+The spatial lag model introduces a spatial lag of the \emph{dependent}
+variable. In the example we have covered, this would translate into:
+
+\[
+\log(P_i) = \alpha + \rho \log(P_i) + \beta_1 Acc_i + \beta_2 Bath_i + \beta_3 Bedr_i + \beta_4 Beds_i + \epsilon_i
+\]
+
+Although it might not seem very different from the previous equation,
+this model violates the exogeneity assumption, crucial for OLS to work.
+
+Equally, the spatial error model includes a spatial lag in the
+\emph{error} term of the equation:
+
+\[
+\log(P_i) = \alpha + \beta_1 Acc_i + \beta_2 Bath_i + \beta_3 Bedr_i + \beta_4 Beds_i + u_i
+\]
+
+\[
+u_i = u_{lag-i} + \epsilon_i
+\]
+
+Again, although similar, one can show this specification violates the
+assumptions about the error term in a classical OLS model.
+
+Both the spatial lag and error model violate some of the assumptions on
+which OLS relies and thus render the technique unusable. Much of the
+efforts have thus focused on coming up with alternative methodologies
+that allow unbiased, robust, and efficient estimation of such models. A
+survey of those is beyond the scope of this note, but the interested
+reader is referred to Anselin (1988), Anselin (2003), and Anselin and
+Rey (2014) for further reference.
+
+\hypertarget{predicting-house-prices}{%
+\section{Predicting house prices}\label{predicting-house-prices}}
+
+So far, we have seen how to exploit the output of a regression model to
+evaluate the role different variables play in explaining another one of
+interest. However, once fit, a model can also be used to obtain
+predictions of the dependent variable given a new set of values for the
+explanatory variables. We will finish this session by dipping our toes
+in predicting with linear models.
+
+The core idea is that once you have estimates for the way in which the
+explanatory variables can be combined to explain the dependent one, you
+can plug new values on the explanatory side of the model and combine
+them following the model estimates to obtain predictions. In the example
+we have worked with, you can imagine this application would be useful to
+obtain valuations of a house, given we know its characteristics.
+
+Conceptually, predicting in linear regression models involves using the
+estimates of the parameters to obtain a value for the dependent
+variable:
+
+\[
+\bar{\log(P_i)} = \bar{\alpha} + \bar{\beta_1} Acc_i^* + \bar{\beta_2 Bath_i^*} + \bar{\beta_3} Bedr_i^* + \bar{\beta_4} Beds_i^*
+\] where \(\bar{\log{P_i}}\) is our predicted value, and we include the
+\(\bar{}\) sign to note that it is our estimate obtained from fitting
+the model. We use the \(^*\) sign to note that those can be new values
+for the explanatory variables, not necessarily those used to fit the
+model.
+
+Technically speaking, prediction in linear models is relatively
+streamlined in R. Suppose we are given data for a new house which is to
+be put on the AirBnb platform. We know it accommodates four people, and
+has two bedrooms, three beds, and one bathroom. We also know that the
+surrounding properties have, on average, 1.5 bathrooms. Let us record
+the data first:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{new.house }\OtherTok{\textless{}{-}} \FunctionTok{data.frame}\NormalTok{(}
+  \AttributeTok{accommodates =} \DecValTok{4}\NormalTok{, }
+  \AttributeTok{bedrooms =} \DecValTok{2}\NormalTok{,}
+  \AttributeTok{beds =} \DecValTok{3}\NormalTok{,}
+  \AttributeTok{bathrooms =} \DecValTok{1}\NormalTok{,}
+  \AttributeTok{w\_bathrooms =} \FloatTok{1.5}
+\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+To obtain the prediction for its price, we can use the \texttt{predict}
+method:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{new.price }\OtherTok{\textless{}{-}} \FunctionTok{predict}\NormalTok{(m5, new.house)}
+\NormalTok{new.price}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+       1 
+4.900168 
+\end{verbatim}
+
+Now remember we were using the log of the price as dependent variable.
+If we want to recover the actual price of the house, we need to take its
+exponent:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{exp}\NormalTok{(new.price)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+       1 
+134.3123 
+\end{verbatim}
+
+According to our model, the house would be worth \$134.3123448.
+
+\hypertarget{questions-2}{%
+\section{Questions}\label{questions-2}}
+
+We will be using again the Madrid AirBnb dataset:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{mad\_abb }\OtherTok{\textless{}{-}} \FunctionTok{st\_read}\NormalTok{(}\StringTok{\textquotesingle{}./data/assignment\_1\_madrid/madrid\_abb.gpkg\textquotesingle{}}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+Reading layer `madrid_abb' from data source 
+  `/Users/franciscorowe/Dropbox/Francisco/Research/sdsm_book/smds/data/assignment_1_madrid/madrid_abb.gpkg' 
+  using driver `GPKG'
+Simple feature collection with 18399 features and 16 fields
+Geometry type: POINT
+Dimension:     XY
+Bounding box:  xmin: -3.86391 ymin: 40.33243 xmax: -3.556 ymax: 40.56274
+Geodetic CRS:  WGS 84
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{colnames}\NormalTok{(mad\_abb)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+ [1] "price"           "price_usd"       "log1p_price_usd" "accommodates"   
+ [5] "bathrooms_text"  "bathrooms"       "bedrooms"        "beds"           
+ [9] "neighbourhood"   "room_type"       "property_type"   "WiFi"           
+[13] "Coffee"          "Gym"             "Parking"         "km_to_retiro"   
+[17] "geom"           
+\end{verbatim}
+
+In addition to those we have already seen, the columns to use here are:
+
+\begin{itemize}
+\tightlist
+\item
+  \texttt{neighbourhood}: a column with the name of the neighbourhood in
+  which the property is located
+\end{itemize}
+
+With this at hand, answer the following questions:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Fit a baseline model with only property characteristics explaining the
+  log of price
+\end{enumerate}
+
+\[
+\log(P_i) = \alpha + \beta_1 Acc_i + \beta_2 Bath_i + \beta_3 Bedr_i + \beta_4 Beds_i + \epsilon_i
+\]
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  Augment the model with fixed effects at the neighbourhood level
+\end{enumerate}
+
+\[
+\log(P_i) = \alpha_r + \beta_1 Acc_i + \beta_2 Bath_i + \beta_3 Bedr_i + \beta_4 Beds_i + \epsilon_i
+\]
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  {[}Optional{]} Augment the model with spatial regimes at the
+  neighbourhood level:
+\end{enumerate}
+
+\[
+\log(P_i) = \alpha_r + \beta_{r1} Acc_i + \beta_{r2} Bath_i + \beta_{r3} Bedr_i + \beta_{r4} Beds_i + \epsilon_{ri}
+\]
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{3}
+\tightlist
+\item
+  Fit a model that augments the baseline in 1. with the spatial lag of a
+  variable you consider interesting. Motivate this choice. Note that to
+  complete this, you will need to also generate a spatial weights
+  matrix.
+\end{enumerate}
+
+In each instance, provide a brief interpretation (no more thana few
+lines for each) that demonstrates your understanding of theunderlying
+concepts behind your approach.
+
+\part{Part III}
+
 \hypertarget{spatial-heterogeneity-1}{%
-\section{Spatial heterogeneity}\label{spatial-heterogeneity-1}}
+\chapter{Spatial heterogeneity}\label{spatial-heterogeneity-1}}
+
+\hypertarget{dependencies-4}{%
+\section{Dependencies}\label{dependencies-4}}
+
+We will rely on the following libraries in this section, all of them
+included in \textbf{?@sec-dependencies}:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Layout}
+\FunctionTok{library}\NormalTok{(tufte)}
+\CommentTok{\# For pretty table}
+\FunctionTok{library}\NormalTok{(knitr)}
+\CommentTok{\# For string parsing}
+\FunctionTok{library}\NormalTok{(stringr)}
+\CommentTok{\# Spatial Data management}
+\FunctionTok{library}\NormalTok{(rgdal)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+Loading required package: sp
+\end{verbatim}
+
+\begin{verbatim}
+Please note that rgdal will be retired by the end of 2023,
+plan transition to sf/stars/terra functions using GDAL and PROJ
+at your earliest convenience.
+
+rgdal: version: 1.5-30, (SVN revision 1171)
+Geospatial Data Abstraction Library extensions to R successfully loaded
+Loaded GDAL runtime: GDAL 3.4.2, released 2022/03/08
+Path to GDAL shared files: /Library/Frameworks/R.framework/Versions/4.2/Resources/library/rgdal/gdal
+GDAL binary built with GEOS: FALSE 
+Loaded PROJ runtime: Rel. 8.2.1, January 1st, 2022, [PJ_VERSION: 821]
+Path to PROJ shared files: /Library/Frameworks/R.framework/Versions/4.2/Resources/library/rgdal/proj
+PROJ CDN enabled: FALSE
+Linking to sp version:1.4-6
+To mute warnings of possible GDAL/OSR exportToProj4() degradation,
+use options("rgdal_show_exportToProj4_warnings"="none") before loading sp or rgdal.
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Pretty graphics}
+\FunctionTok{library}\NormalTok{(ggplot2)}
+\CommentTok{\# Pretty maps}
+\FunctionTok{library}\NormalTok{(ggmap)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+i Google's Terms of Service: <https://mapsplatform.google.com>
+\end{verbatim}
+
+\begin{verbatim}
+i Please cite ggmap if you use it! Use `citation("ggmap")` for details.
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# For all your interpolation needs}
+\FunctionTok{library}\NormalTok{(gstat)}
+\CommentTok{\# For data manipulation}
+\FunctionTok{library}\NormalTok{(dplyr)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+
+Attaching package: 'dplyr'
+\end{verbatim}
+
+\begin{verbatim}
+The following objects are masked from 'package:stats':
+
+    filter, lag
+\end{verbatim}
+
+\begin{verbatim}
+The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Spatial regression}
+\FunctionTok{library}\NormalTok{(spdep)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+Loading required package: spData
+\end{verbatim}
+
+\begin{verbatim}
+To access larger datasets in this package, install the spDataLarge
+package with: `install.packages('spDataLarge',
+repos='https://nowosad.github.io/drat/', type='source')`
+\end{verbatim}
+
+\begin{verbatim}
+Loading required package: sf
+\end{verbatim}
+
+\begin{verbatim}
+Linking to GEOS 3.10.2, GDAL 3.4.2, PROJ 8.2.1; sf_use_s2() is TRUE
+\end{verbatim}
+
+Before we start any analysis, let us set the path to the directory where
+we are working. We can easily do that with \texttt{setwd()}. Please
+replace in the following line the path to the folder where you have
+placed this file and where the \texttt{house\_transactions} folder with
+the data lives.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{setwd}\NormalTok{(}\StringTok{\textquotesingle{}.\textquotesingle{}}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{data-3}{%
+\section{Data}\label{data-3}}
+
+To explore ideas in spatial regression, we will the set of Airbnb
+properties for San Diego (US), borrowed from the ``Geographic Data
+Science with Python'' book (see
+\href{https://geographicdata.science/book/data/airbnb/regression_cleaning.html}{here}
+for more info on the dataset source). This covers the point location of
+properties advertised on the Airbnb website in the San Diego region.
+
+Let us load the data:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{db }\OtherTok{\textless{}{-}} \FunctionTok{st\_read}\NormalTok{(}\StringTok{\textquotesingle{}data/abb\_sd/regression\_db.geojson\textquotesingle{}}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+Reading layer `regression_db' from data source 
+  `/Users/franciscorowe/Dropbox/Francisco/Research/sdsm_book/smds/data/abb_sd/regression_db.geojson' 
+  using driver `GeoJSON'
+Simple feature collection with 6110 features and 19 fields
+Geometry type: POINT
+Dimension:     XY
+Bounding box:  xmin: -117.2812 ymin: 32.57349 xmax: -116.9553 ymax: 33.08311
+Geodetic CRS:  WGS 84
+\end{verbatim}
+
+The table contains the followig variables:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{names}\NormalTok{(db)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+ [1] "accommodates"       "bathrooms"          "bedrooms"          
+ [4] "beds"               "neighborhood"       "pool"              
+ [7] "d2balboa"           "coastal"            "price"             
+[10] "log_price"          "id"                 "pg_Apartment"      
+[13] "pg_Condominium"     "pg_House"           "pg_Other"          
+[16] "pg_Townhouse"       "rt_Entire_home.apt" "rt_Private_room"   
+[19] "rt_Shared_room"     "geometry"          
+\end{verbatim}
+
+For most of this chapter, we will be exploring determinants and
+strategies for modelling the price of a property advertised in AirBnb.
+To get a first taste of what this means, we can create a plot of prices
+within the area of San Diego:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{db }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{color =}\NormalTok{ price)) }\SpecialCharTok{+}
+  \FunctionTok{geom\_sf}\NormalTok{() }\SpecialCharTok{+} 
+  \FunctionTok{scale\_color\_viridis\_c}\NormalTok{() }\SpecialCharTok{+}
+  \FunctionTok{theme\_void}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{figure}[H]
+
+{\centering \includegraphics{./06-spatial-heterogeneity_files/figure-pdf/unnamed-chunk-5-1.pdf}
+
+}
+
+\end{figure}
+
+\hypertarget{spatial-heterogeneity-2}{%
+\section{Spatial heterogeneity}\label{spatial-heterogeneity-2}}
 
 Spatial heterogeneity (SH) arises when we cannot safely assume the
 process we are studying operates under the same ``rules'' throughout the
@@ -4423,7 +5154,7 @@ column:
 
 \begin{figure}[H]
 
-{\centering \includegraphics{./05-spatial-dependence_files/figure-pdf/unnamed-chunk-8-1.pdf}
+{\centering \includegraphics{./06-spatial-heterogeneity_files/figure-pdf/unnamed-chunk-6-1.pdf}
 
 }
 
@@ -4558,7 +5289,7 @@ plotting the estimates of each fixed effect on a map:
 
 \begin{figure}[H]
 
-{\centering \includegraphics{./05-spatial-dependence_files/figure-pdf/unnamed-chunk-10-1.pdf}
+{\centering \includegraphics{./06-spatial-heterogeneity_files/figure-pdf/unnamed-chunk-8-1.pdf}
 
 }
 
@@ -5006,433 +5737,7 @@ F-statistic: 232.4 on 180 and 5930 DF,  p-value: < 2.2e-16
 \end{verbatim}
 
 This allows us to get a separate constant term and estimate of the
-impact of each variable \emph{for every neighborhood}
-
-\hypertarget{spatial-dependence-2}{%
-\section{Spatial dependence}\label{spatial-dependence-2}}
-
-As we have just discussed, SH is about effects of phenomena that are
-\emph{explicitly linked} to geography and that hence cause spatial
-variation and clustering of values. This encompasses many of the kinds
-of spatial effects we may be interested in when we fit linear
-regressions. However, in other cases, our interest is on the effect of
-the \emph{spatial configuration} of the observations, and the extent to
-which that has an effect on the outcome we are considering. For example,
-we might think that the price of a house not only depends on the number
-of bathrooms it has but, if we take number of bathrooms as a proxy for
-size and status, also whether it is surrounded by other houses with many
-bathrooms. This kind of spatial effect is fundamentally different from
-SH in that is it not related to inherent characteristics of the
-geography but relates to the characteristics of the observations in our
-dataset and, specially, to their spatial arrangement. We call this
-phenomenon by which the values of observations are related to each other
-through distance \emph{spatial dependence} (Anselin 1988).
-
-\textbf{Spatial Weights}
-
-There are several ways to introduce spatial dependence in an econometric
-framework, with varying degrees of econometric sophistication (see
-Anselin 2003 for a good overview). Common to all of them however is the
-way space is formally encapsulated: through \emph{spatial weights
-matrices (}\(W\))\footnote{If you need to refresh your knowledge on
-  spatial weight matrices, check
-  \href{https://darribas.org/gds_course/content/bE/concepts_E.html}{Block
-  E} of Arribas-Bel (2019);
-  \href{https://geographicdata.science/book/notebooks/04_spatial_weights.html}{Chapter
-  4} of Rey, Arribas-Bel, and Wolf (forthcoming); or the
-  \href{https://fcorowe.github.io/intro-gds/03-spatial_weights.html}{Spatial
-  Weights} Section of (\textbf{rowe2022a?}).} These are \(NxN\) matrices
-with zero diagonals and every \(w_{ij}\) cell with a value that
-represents the degree of spatial connectivity/interaction between
-observations \(i\) and \(j\). If they are not connected at all,
-\(w_{ij}=0\), otherwise \(w_{ij}>0\) and we call \(i\) and \(j\)
-neighbors. The exact value in the latter case depends on the criterium
-we use to define neighborhood relations. These matrices also tend to be
-row-standardized so the sum of each row equals to one.
-
-A related concept to spatial weight matrices is that of \emph{spatial
-lag}. This is an operator that multiplies a given variable \(y\) by a
-spatial weight matrix:
-
-\[
-y_{lag} = W y
-\]
-
-If \(W\) is row-standardized, \(y_{lag}\) is effectively the average
-value of \(y\) in the neighborhood of each observation. The individual
-notation may help clarify this:
-
-\[
-y_{lag-i} = \displaystyle \sum_j w_{ij} y_j
-\]
-
-where \(y_{lag-i}\) is the spatial lag of variable \(y\) at location
-\(i\), and \(j\) sums over the entire dataset. If \(W\) is
-row-standardized, \(y_{lag-i}\) becomes an average of \(y\) weighted by
-the spatial criterium defined in \(W\).
-
-Given that spatial weights matrices are not the focus of this tutorial,
-we will stick to a very simple case. Since we are dealing with points,
-we will use \(K\)-nn weights, which take the \(k\) nearest neighbors of
-each observation as neighbors and assign a value of one, assigning
-everyone else a zero. We will use \(k=50\) to get a good degree of
-variation and sensible results.
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\CommentTok{\# Create knn list of each house}
-\NormalTok{hnn }\OtherTok{\textless{}{-}}\NormalTok{ db }\SpecialCharTok{\%\textgreater{}\%}
-  \FunctionTok{st\_coordinates}\NormalTok{() }\SpecialCharTok{\%\textgreater{}\%}
-  \FunctionTok{as.matrix}\NormalTok{() }\SpecialCharTok{\%\textgreater{}\%}
-  \FunctionTok{knearneigh}\NormalTok{(}\AttributeTok{k =} \DecValTok{50}\NormalTok{)}
-\CommentTok{\# Create nb object}
-\NormalTok{hnb }\OtherTok{\textless{}{-}} \FunctionTok{knn2nb}\NormalTok{(hnn)}
-\CommentTok{\# Create spatial weights matrix (note it row{-}standardizes by default)}
-\NormalTok{hknn }\OtherTok{\textless{}{-}} \FunctionTok{nb2listw}\NormalTok{(hnb)}
-\end{Highlighting}
-\end{Shaded}
-
-We can inspect the weights created by simply typing the name of the
-object:
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{hknn}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-Characteristics of weights list object:
-Neighbour list object:
-Number of regions: 6110 
-Number of nonzero links: 305500 
-Percentage nonzero weights: 0.8183306 
-Average number of links: 50 
-Non-symmetric neighbours list
-
-Weights style: W 
-Weights constants summary:
-     n       nn   S0       S1       S2
-W 6110 37332100 6110 220.5032 24924.44
-\end{verbatim}
-
-\textbf{Exogenous spatial effects}
-
-Let us come back to the house price example we have been working with.
-So far, we have hypothesized that the price of an AirBnb property in San
-Diego can be explained using information about its own characteristics,
-and the neighbourhood it belongs to. However, we can hypothesise that
-the price of a house is also affected by the characteristics of the
-houses surrounding it. Considering it as a proxy for larger and more
-luxurious houses, we will use the number of bathrooms of neighboring
-houses as an additional explanatory variable. This represents the most
-straightforward way to introduce spatial dependence in a regression, by
-considering not only a given explanatory variable, but also its spatial
-lag.
-
-In our example case, in addition to including the number of bathrooms of
-the property, we will include its spatial lag. In other words, we will
-be saying that it is not only the number of bathrooms in a house but
-also that of the surrounding properties that helps explain the final
-price at which a house is advertised for. Mathematically, this implies
-estimating the following model:
-
-\[
-\log(P_i) = \alpha + \beta_1 Acc_i + \beta_2 Bath_i + \beta_3 Bedr_i + \beta_4 Beds_i+ \beta_5 Bath_{lag-i} + \epsilon_i
-\]
-
-Let us first compute the spatial lag of \texttt{bathrooms}:
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{db}\SpecialCharTok{$}\NormalTok{w\_bathrooms }\OtherTok{\textless{}{-}} \FunctionTok{lag.listw}\NormalTok{(hknn, db}\SpecialCharTok{$}\NormalTok{bathrooms)}
-\end{Highlighting}
-\end{Shaded}
-
-And then we can include it in our previous specification. Note that we
-apply the log to the lag, not the reverse:
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{m5 }\OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(}
-  \StringTok{\textquotesingle{}log\_price \textasciitilde{} accommodates + bedrooms + beds + bathrooms + w\_bathrooms\textquotesingle{}}\NormalTok{,}
-\NormalTok{  db}
-\NormalTok{)}
-
-\FunctionTok{summary}\NormalTok{(m5)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-
-Call:
-lm(formula = "log_price ~ accommodates + bedrooms + beds + bathrooms + w_bathrooms", 
-    data = db)
-
-Residuals:
-    Min      1Q  Median      3Q     Max 
--2.8869 -0.3243 -0.0206  0.2931  3.5132 
-
-Coefficients:
-              Estimate Std. Error t value Pr(>|t|)    
-(Intercept)   3.579448   0.032337 110.692   <2e-16 ***
-accommodates  0.173226   0.005233  33.100   <2e-16 ***
-bedrooms      0.103116   0.012327   8.365   <2e-16 ***
-beds         -0.075071   0.007787  -9.641   <2e-16 ***
-bathrooms     0.117268   0.012507   9.376   <2e-16 ***
-w_bathrooms   0.353021   0.023572  14.976   <2e-16 ***
----
-Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-
-Residual standard error: 0.5271 on 6104 degrees of freedom
-Multiple R-squared:  0.574, Adjusted R-squared:  0.5736 
-F-statistic:  1645 on 5 and 6104 DF,  p-value: < 2.2e-16
-\end{verbatim}
-
-As we can see, the lag is not only significative and positive, but its
-effect seems to be even larger that that of the property itself. Taken
-literally, this implies that the average number of bathrooms in AirBnb's
-nearby has a larger effect on the final price of a given AirBnb than its
-own number of bathrooms. There are several ways to interpret this. One
-is that, if we take the spatial lag of bathrooms, as we said above, to
-be a proxy for the types of houses surrounding a property, this is
-probably a better predictor of how wealthy an area is than the number of
-bathrooms of a single property, which is more variable. If we also
-assume that the area where an AirBnb is located has a bigger effect on
-price than the number of bathrooms, we can start seeing an answer to the
-apparent puzzle.
-
-\textbf{A note on more advanced spatial regression}
-
-Introducing a spatial lag of an explanatory variable, as we have just
-seen, is the most straightforward way of incorporating the notion of
-spatial dependence in a linear regression framework. It does not require
-additional changes, it can be estimated with OLS, and the interpretation
-is rather similar to interpreting non-spatial variables. The field of
-spatial econometrics however is a much broader one and has produced over
-the last decades many techniques to deal with spatial effects and
-spatial dependence in different ways. Although this might be an over
-simplification, one can say that most of such efforts for the case of a
-single cross-section are focused on two main variations: the spatial lag
-and the spatial error model. Both are similar to the case we have seen
-in that they are based on the introduction of a spatial lag, but they
-differ in the component of the model they modify and affect.
-
-The spatial lag model introduces a spatial lag of the \emph{dependent}
-variable. In the example we have covered, this would translate into:
-
-\[
-\log(P_i) = \alpha + \rho \log(P_i) + \beta_1 Acc_i + \beta_2 Bath_i + \beta_3 Bedr_i + \beta_4 Beds_i + \epsilon_i
-\]
-
-Although it might not seem very different from the previous equation,
-this model violates the exogeneity assumption, crucial for OLS to work.
-
-Equally, the spatial error model includes a spatial lag in the
-\emph{error} term of the equation:
-
-\[
-\log(P_i) = \alpha + \beta_1 Acc_i + \beta_2 Bath_i + \beta_3 Bedr_i + \beta_4 Beds_i + u_i
-\]
-
-\[
-u_i = u_{lag-i} + \epsilon_i
-\]
-
-Again, although similar, one can show this specification violates the
-assumptions about the error term in a classical OLS model.
-
-Both the spatial lag and error model violate some of the assumptions on
-which OLS relies and thus render the technique unusable. Much of the
-efforts have thus focused on coming up with alternative methodologies
-that allow unbiased, robust, and efficient estimation of such models. A
-survey of those is beyond the scope of this note, but the interested
-reader is referred to Anselin (1988), Anselin (2003), and Anselin and
-Rey (2014) for further reference.
-
-\hypertarget{predicting-house-prices}{%
-\section{Predicting house prices}\label{predicting-house-prices}}
-
-So far, we have seen how to exploit the output of a regression model to
-evaluate the role different variables play in explaining another one of
-interest. However, once fit, a model can also be used to obtain
-predictions of the dependent variable given a new set of values for the
-explanatory variables. We will finish this session by dipping our toes
-in predicting with linear models.
-
-The core idea is that once you have estimates for the way in which the
-explanatory variables can be combined to explain the dependent one, you
-can plug new values on the explanatory side of the model and combine
-them following the model estimates to obtain predictions. In the example
-we have worked with, you can imagine this application would be useful to
-obtain valuations of a house, given we know its characteristics.
-
-Conceptually, predicting in linear regression models involves using the
-estimates of the parameters to obtain a value for the dependent
-variable:
-
-\[
-\bar{\log(P_i)} = \bar{\alpha} + \bar{\beta_1} Acc_i^* + \bar{\beta_2 Bath_i^*} + \bar{\beta_3} Bedr_i^* + \bar{\beta_4} Beds_i^*
-\] where \(\bar{\log{P_i}}\) is our predicted value, and we include the
-\(\bar{}\) sign to note that it is our estimate obtained from fitting
-the model. We use the \(^*\) sign to note that those can be new values
-for the explanatory variables, not necessarily those used to fit the
-model.
-
-Technically speaking, prediction in linear models is relatively
-streamlined in R. Suppose we are given data for a new house which is to
-be put on the AirBnb platform. We know it accommodates four people, and
-has two bedrooms, three beds, and one bathroom. We also know that the
-surrounding properties have, on average, 1.5 bathrooms. Let us record
-the data first:
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{new.house }\OtherTok{\textless{}{-}} \FunctionTok{data.frame}\NormalTok{(}
-  \AttributeTok{accommodates =} \DecValTok{4}\NormalTok{, }
-  \AttributeTok{bedrooms =} \DecValTok{2}\NormalTok{,}
-  \AttributeTok{beds =} \DecValTok{3}\NormalTok{,}
-  \AttributeTok{bathrooms =} \DecValTok{1}\NormalTok{,}
-  \AttributeTok{w\_bathrooms =} \FloatTok{1.5}
-\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
-To obtain the prediction for its price, we can use the \texttt{predict}
-method:
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{new.price }\OtherTok{\textless{}{-}} \FunctionTok{predict}\NormalTok{(m5, new.house)}
-\NormalTok{new.price}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-       1 
-4.900168 
-\end{verbatim}
-
-Now remember we were using the log of the price as dependent variable.
-If we want to recover the actual price of the house, we need to take its
-exponent:
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\FunctionTok{exp}\NormalTok{(new.price)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-       1 
-134.3123 
-\end{verbatim}
-
-According to our model, the house would be worth \$134.3123448.
-
-\hypertarget{questions-2}{%
-\section{Questions}\label{questions-2}}
-
-We will be using again the Madrid AirBnb dataset:
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{mad\_abb }\OtherTok{\textless{}{-}} \FunctionTok{st\_read}\NormalTok{(}\StringTok{\textquotesingle{}./data/assignment\_1\_madrid/madrid\_abb.gpkg\textquotesingle{}}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-Reading layer `madrid_abb' from data source 
-  `/Users/franciscorowe/Dropbox/Francisco/Research/sdsm_book/smds/data/assignment_1_madrid/madrid_abb.gpkg' 
-  using driver `GPKG'
-Simple feature collection with 18399 features and 16 fields
-Geometry type: POINT
-Dimension:     XY
-Bounding box:  xmin: -3.86391 ymin: 40.33243 xmax: -3.556 ymax: 40.56274
-Geodetic CRS:  WGS 84
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\FunctionTok{colnames}\NormalTok{(mad\_abb)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
- [1] "price"           "price_usd"       "log1p_price_usd" "accommodates"   
- [5] "bathrooms_text"  "bathrooms"       "bedrooms"        "beds"           
- [9] "neighbourhood"   "room_type"       "property_type"   "WiFi"           
-[13] "Coffee"          "Gym"             "Parking"         "km_to_retiro"   
-[17] "geom"           
-\end{verbatim}
-
-In addition to those we have already seen, the columns to use here are:
-
-\begin{itemize}
-\tightlist
-\item
-  \texttt{neighbourhood}: a column with the name of the neighbourhood in
-  which the property is located
-\end{itemize}
-
-With this at hand, answer the following questions:
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  Fit a baseline model with only property characteristics explaining the
-  log of price
-\end{enumerate}
-
-\[
-\log(P_i) = \alpha + \beta_1 Acc_i + \beta_2 Bath_i + \beta_3 Bedr_i + \beta_4 Beds_i + \epsilon_i
-\]
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{1}
-\tightlist
-\item
-  Augment the model with fixed effects at the neighbourhood level
-\end{enumerate}
-
-\[
-\log(P_i) = \alpha_r + \beta_1 Acc_i + \beta_2 Bath_i + \beta_3 Bedr_i + \beta_4 Beds_i + \epsilon_i
-\]
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{2}
-\tightlist
-\item
-  {[}Optional{]} Augment the model with spatial regimes at the
-  neighbourhood level:
-\end{enumerate}
-
-\[
-\log(P_i) = \alpha_r + \beta_{r1} Acc_i + \beta_{r2} Bath_i + \beta_{r3} Bedr_i + \beta_{r4} Beds_i + \epsilon_{ri}
-\]
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{3}
-\tightlist
-\item
-  Fit a model that augments the baseline in 1. with the spatial lag of a
-  variable you consider interesting. Motivate this choice. Note that to
-  complete this, you will need to also generate a spatial weights
-  matrix.
-\end{enumerate}
-
-In each instance, provide a brief interpretation (no more thana few
-lines for each) that demonstrates your understanding of theunderlying
-concepts behind your approach.
-
-\part{Part III}
-
-\hypertarget{spatial-heterogeneity-2}{%
-\chapter{Spatial heterogeneity}\label{spatial-heterogeneity-2}}
+impact of each variable \emph{for every neighborhood}.
 
 \hypertarget{multilevel-modelling}{%
 \chapter{Multilevel modelling}\label{multilevel-modelling}}
@@ -5451,8 +5756,8 @@ multi-level modelling and draws on the following references:
   modelling and is free!
 \end{itemize}
 
-\hypertarget{dependencies-4}{%
-\section{Dependencies}\label{dependencies-4}}
+\hypertarget{dependencies-5}{%
+\section{Dependencies}\label{dependencies-5}}
 
 This chapter uses the following libraries which are listed in the
 {[}Dependency list{]} Section of Chapter 1:
@@ -5484,8 +5789,8 @@ This chapter uses the following libraries which are listed in the
 \end{Highlighting}
 \end{Shaded}
 
-\hypertarget{data-3}{%
-\section{Data}\label{data-3}}
+\hypertarget{data-4}{%
+\section{Data}\label{data-4}}
 
 For this chapter, we will data for Liverpool from England's 2011 Census.
 The original source is the
@@ -6309,16 +6614,16 @@ To this end, we run:
 
 \begin{verbatim}
    groupFctr   groupID        term         mean       median          sd
-1    lsoa_cd E01006512 (Intercept) -0.014034350 -0.013425906 0.019964209
-2    lsoa_cd E01006513 (Intercept) -0.015665785 -0.016835827 0.019586187
-3    lsoa_cd E01006514 (Intercept) -0.022910322 -0.022257525 0.019728213
-4    lsoa_cd E01006515 (Intercept) -0.015236054 -0.016869119 0.020732834
-5    lsoa_cd E01006518 (Intercept) -0.016012617 -0.016318429 0.019922488
-6    lsoa_cd E01006519 (Intercept) -0.016621330 -0.017467321 0.009134137
-7    lsoa_cd E01006520 (Intercept) -0.023806687 -0.024316510 0.018634205
-8    lsoa_cd E01006521 (Intercept)  0.008226012  0.008505773 0.017094423
-9    lsoa_cd E01006522 (Intercept)  0.021389582  0.021061825 0.020298890
-10   lsoa_cd E01006523 (Intercept)  0.003443873  0.003262499 0.019031860
+1    lsoa_cd E01006512 (Intercept) -0.015314298 -0.014386892 0.019447982
+2    lsoa_cd E01006513 (Intercept) -0.016567824 -0.015912093 0.021533154
+3    lsoa_cd E01006514 (Intercept) -0.021800050 -0.022843458 0.017941634
+4    lsoa_cd E01006515 (Intercept) -0.015851385 -0.014127540 0.019822357
+5    lsoa_cd E01006518 (Intercept) -0.016189785 -0.016782536 0.019831123
+6    lsoa_cd E01006519 (Intercept) -0.015727362 -0.016057853 0.009286117
+7    lsoa_cd E01006520 (Intercept) -0.024469704 -0.023293170 0.019756958
+8    lsoa_cd E01006521 (Intercept)  0.005055726  0.005078665 0.018311245
+9    lsoa_cd E01006522 (Intercept)  0.015557544  0.015655187 0.019811112
+10   lsoa_cd E01006523 (Intercept)  0.002274224  0.002866474 0.018229022
 \end{verbatim}
 
 The results contain the estimated mean, median and standard deviation
@@ -6426,9 +6731,9 @@ Projected CRS: Transverse_Mercator
  $ groupFctr: chr  "msoa_cd" "msoa_cd" "msoa_cd" "msoa_cd" ...
  $ groupID  : chr  "E02001347" "E02001348" "E02001349" "E02001350" ...
  $ term     : chr  "(Intercept)" "(Intercept)" "(Intercept)" "(Intercept)" ...
- $ mean     : num  -0.00994 -0.02424 -0.02486 0.00464 0.02205 ...
- $ median   : num  -0.011 -0.0259 -0.024 0.0023 0.0213 ...
- $ sd       : num  0.0322 0.0336 0.034 0.0331 0.0157 ...
+ $ mean     : num  -0.01161 -0.0254 -0.03062 0.00753 0.02173 ...
+ $ median   : num  -0.0113 -0.0295 -0.0308 0.0107 0.0214 ...
+ $ sd       : num  0.0308 0.0313 0.0279 0.0323 0.0156 ...
 \end{verbatim}
 
 \begin{Shaded}
@@ -6991,8 +7296,8 @@ The content of this chapter is based on:
   modelling and is free!
 \end{itemize}
 
-\hypertarget{dependencies-5}{%
-\section{Dependencies}\label{dependencies-5}}
+\hypertarget{dependencies-6}{%
+\section{Dependencies}\label{dependencies-6}}
 
 This chapter uses the following libraries which are listed in the
 \textbf{?@sec-dependencies} in Chapter 1:
@@ -7024,8 +7329,8 @@ This chapter uses the following libraries which are listed in the
 \end{Highlighting}
 \end{Shaded}
 
-\hypertarget{data-4}{%
-\section{Data}\label{data-4}}
+\hypertarget{data-5}{%
+\section{Data}\label{data-5}}
 
 For this chapter, we will data for Liverpool from England's 2011 Census.
 The original source is the
@@ -7382,9 +7687,9 @@ Projected CRS: Transverse_Mercator
  $ groupFctr: chr  "msoa_cd" "msoa_cd" "msoa_cd" "msoa_cd" ...
  $ groupID  : chr  "E02001347" "E02001348" "E02001349" "E02001350" ...
  $ term     : chr  "lt_ill" "lt_ill" "lt_ill" "lt_ill" ...
- $ mean     : num  0.0223 -0.1154 0.0562 -0.1431 -0.2802 ...
- $ median   : num  0.0236 -0.1179 0.0626 -0.1456 -0.2818 ...
- $ sd       : num  0.0474 0.0694 0.0814 0.0429 0.0396 ...
+ $ mean     : num  0.0296 -0.1215 0.0565 -0.1392 -0.2817 ...
+ $ median   : num  0.0298 -0.119 0.0569 -0.138 -0.2838 ...
+ $ sd       : num  0.0482 0.0723 0.0869 0.0381 0.0389 ...
 \end{verbatim}
 
 \begin{Shaded}
@@ -7664,9 +7969,9 @@ Analyse and discuss:
   differences between your varying intercept and varying slope models.
 \end{enumerate}
 
-\hypertarget{geographically-weighted-regression-modelling}{%
-\chapter{Geographically weighted regression
-modelling}\label{geographically-weighted-regression-modelling}}
+\hypertarget{geographically-weighted-regression}{%
+\chapter{Geographically weighted
+regression}\label{geographically-weighted-regression}}
 
 This chapter provides an introduction to geographically weighted
 regression models.
@@ -7679,12 +7984,12 @@ The content of this chapter is based on:
   are working or planning to start working on geographically weighted
   regression modelling.
 \item
-  (\textbf{comber2022?}) provide a roadmap to approach various practical
+  Comber et al. (2022) provide a roadmap to approach various practical
   issues in the application of GWR.
 \end{itemize}
 
-\hypertarget{dependencies-6}{%
-\section{Dependencies}\label{dependencies-6}}
+\hypertarget{dependencies-7}{%
+\section{Dependencies}\label{dependencies-7}}
 
 This chapter uses the following libraries:
 
@@ -7717,8 +8022,8 @@ This chapter uses the following libraries:
 \end{Highlighting}
 \end{Shaded}
 
-\hypertarget{data-5}{%
-\section{Data}\label{data-5}}
+\hypertarget{data-6}{%
+\section{Data}\label{data-6}}
 
 For this chapter, we will use data on:
 
@@ -8623,7 +8928,8 @@ counterintuitive but may be explained by the wider socio-economic
 disadvantages between the North and the South of England. The North is
 usually characterised by a persistent concentration of more
 disadvantaged neighbourhoods than the South where affluent households
-have tended to cluster for the last 40 years (\textbf{patias2021?}).
+have tended to cluster for the last 40 years (Patias, Rowe, and
+Arribas-Bel 2021).
 
 \hypertarget{assessing-statistical-significance}{%
 \subsection{Assessing statistical
@@ -8708,8 +9014,8 @@ coefficients even when not observed globally Wheeler and Tiefelsdorf
 (2005). Collinearity can be highly problematic in the case of
 compositional, categorical and ordinal predictors, and may result in
 exact local collinearity making the search for an optimal bandwidth
-impossible. A recent paper suggests potential ways forward
-(\textbf{comber2022?}).
+impossible. A recent paper suggests potential ways forward (Comber et
+al. 2022).
 
 \hypertarget{questions-5}{%
 \section{Questions}\label{questions-5}}
@@ -8758,8 +9064,8 @@ Analyse and discuss:
 
 \part{Part IV}
 
-\hypertarget{spatiotemporal-wrangling}{%
-\chapter{Spatiotemporal wrangling}\label{spatiotemporal-wrangling}}
+\hypertarget{space-time-wrangling}{%
+\chapter{Space-time wrangling}\label{space-time-wrangling}}
 
 This chapter provides an introduction to the complexities of
 spatio-temporal data and modelling. For modelling, we consider the Fixed
@@ -8783,8 +9089,8 @@ The content of this chapter is based on:
   Chapter.
 \end{itemize}
 
-\hypertarget{dependencies-7}{%
-\section{Dependencies}\label{dependencies-7}}
+\hypertarget{dependencies-8}{%
+\section{Dependencies}\label{dependencies-8}}
 
 This chapter uses the following libraries:
 
@@ -8822,8 +9128,8 @@ This chapter uses the following libraries:
 \end{Highlighting}
 \end{Shaded}
 
-\hypertarget{data-6}{%
-\section{Data}\label{data-6}}
+\hypertarget{data-7}{%
+\section{Data}\label{data-7}}
 
 For this chapter, we will use data on:
 
@@ -9393,9 +9699,9 @@ removing the \texttt{\#} sign.
 Alternative data visualisation tools are animations, telliscope and
 shiny. Animations can be constructed by plotting spatial data
 frame-by-frame, and then stringing them together in sequence. A useful R
-packages \texttt{gganimate} and \texttt{tmap}! See
-(\textbf{lovelace2019?}). Note that the creation of animations may
-require external dependencies; hence, they have been included here. Both
+packages \texttt{gganimate} and \texttt{tmap}! See Lovelace, Nowosad,
+and Muenchow (2019). Note that the creation of animations may require
+external dependencies; hence, they have been included here. Both
 \texttt{telliscope} and \texttt{shiny} are useful ways for visualising
 large spatio-temporal data sets in an interactive ways. Some effort is
 required to deploy these tools.
@@ -10350,8 +10656,8 @@ Analyse and discuss:
   Does the ST model indicate significant variations over time? How?
 \end{enumerate}
 
-\hypertarget{spatiotemporal-modelling}{%
-\chapter{Spatiotemporal modelling}\label{spatiotemporal-modelling}}
+\hypertarget{space-time-modelling}{%
+\chapter{Space-time modelling}\label{space-time-modelling}}
 
 \hypertarget{spatial-machine-learning}{%
 \chapter{Spatial machine learning}\label{spatial-machine-learning}}
@@ -10361,10 +10667,12 @@ Analyse and discuss:
 \hypertarget{platform}{%
 \chapter{Platform}\label{platform}}
 
+In progress
+
 \bookmarksetup{startatroot}
 
-\hypertarget{data-7}{%
-\chapter{Data}\label{data-7}}
+\hypertarget{data-8}{%
+\chapter{Data}\label{data-8}}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -10709,6 +11017,12 @@ Mini Course.''} \emph{REGION} 1 (1): R1.
 Journal of Open Source Education} 2 (14).
 https://doi.org/\url{https://doi.org/10.21105/jose.00042}.
 
+\leavevmode\vadjust pre{\hypertarget{ref-arribas-bel2021}{}}%
+Arribas-Bel, Daniel, M.-À. Garcia-López, and Elisabet Viladecans-Marsal.
+2021. {``Building(s and) Cities: Delineating Urban Areas with a Machine
+Learning Algorithm.''} \emph{Journal of Urban Economics} 125
+(September): 103217. \url{https://doi.org/10.1016/j.jue.2019.103217}.
+
 \leavevmode\vadjust pre{\hypertarget{ref-banerjee2014hierarchical}{}}%
 Banerjee, Sudipto, Bradley P Carlin, and Alan E Gelfand. 2014.
 \emph{Hierarchical Modeling and Analysis for Spatial Data}. Crc Press.
@@ -10717,6 +11031,11 @@ Banerjee, Sudipto, Bradley P Carlin, and Alan E Gelfand. 2014.
 Belsley, David A, Edwin Kuh, and Roy E Welsch. 2005. \emph{Regression
 Diagnostics: Identifying Influential Data and Sources of Collinearity}.
 Vol. 571. John Wiley \& Sons.
+
+\leavevmode\vadjust pre{\hypertarget{ref-bivand2013}{}}%
+Bivand, Roger S., Edzer Pebesma, and Virgilio Gómez-Rubio. 2013.
+\emph{Applied Spatial Data Analysis with r}. Springer New York.
+\url{https://doi.org/10.1007/978-1-4614-7618-4}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-comber2015}{}}%
 Brunsdon, Chris, and Lex Comber. 2015. \emph{An Introduction to r for
@@ -10727,6 +11046,20 @@ Brunsdon, Chris, Stewart Fotheringham, and Martin Charlton. 1998.
 {``Geographically Weighted Regression.''} \emph{Journal of the Royal
 Statistical Society: Series D (The Statistician)} 47 (3): 431--43.
 
+\leavevmode\vadjust pre{\hypertarget{ref-casado-duxedaz2017}{}}%
+Casado-Díaz, José Manuel, Lucas Martínez-Bernabéu, and Francisco Rowe.
+2017. {``An Evolutionary Approach to the Delimitation of Labour Market
+Areas: An Empirical Application for Chile.''} \emph{Spatial Economic
+Analysis} 12 (4): 379--403.
+\url{https://doi.org/10.1080/17421772.2017.1273541}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-comber2022}{}}%
+Comber, Alexis, Christopher Brunsdon, Martin Charlton, Guanpeng Dong,
+Richard Harris, Binbin Lu, Yihe Lü, et al. 2022. {``A Route Map for
+Successful Applications of Geographically Weighted Regression.''}
+\emph{Geographical Analysis} 55 (1): 155--78.
+\url{https://doi.org/10.1111/gean.12316}.
+
 \leavevmode\vadjust pre{\hypertarget{ref-cressie2015statistics}{}}%
 Cressie, Noel. 2015. \emph{Statistics for Spatial Data}. John Wiley \&
 Sons.
@@ -10735,6 +11068,11 @@ Sons.
 Cressie, Noel, and Gardar Johannesson. 2008. {``Fixed Rank Kriging for
 Very Large Spatial Data Sets.''} \emph{Journal of the Royal Statistical
 Society: Series B (Statistical Methodology)} 70 (1): 209--26.
+
+\leavevmode\vadjust pre{\hypertarget{ref-fotheringham1989spatial}{}}%
+Fotheringham, A Stewart, and Morton E O'Kelly. 1989. \emph{Spatial
+Interaction Models: Formulations and Applications}. Vol. 1. Kluwer
+Academic Publishers Dordrecht.
 
 \leavevmode\vadjust pre{\hypertarget{ref-fotheringham1991modifiable}{}}%
 Fotheringham, A Stewart, and David WS Wong. 1991. {``The Modifiable
@@ -10768,10 +11106,26 @@ O'Reilly, US. \url{https://r4ds.had.co.nz}.
 Hyndman, Rob J, and George Athanasopoulos. 2018. \emph{Forecasting:
 Principles and Practice}. OTexts.
 
+\leavevmode\vadjust pre{\hypertarget{ref-kong2018}{}}%
+Kong, Xiangjie, Menglin Li, Kai Ma, Kaiqi Tian, Mengyuan Wang, Zhaolong
+Ning, and Feng Xia. 2018. {``Big Trajectory Data: A Survey of
+Applications and Services.''} \emph{IEEE Access} 6: 58295--306.
+\url{https://doi.org/10.1109/access.2018.2873779}.
+
 \leavevmode\vadjust pre{\hypertarget{ref-kwan2004geovisualization}{}}%
 Kwan, Mei-Po, and Jiyeong Lee. 2004. {``Geovisualization of Human
 Activity Patterns Using 3D GIS: A Time-Geographic Approach.''}
 \emph{Spatially Integrated Social Science} 27: 721--44.
+
+\leavevmode\vadjust pre{\hypertarget{ref-loidl2016}{}}%
+Loidl, Martin, Gudrun Wallentin, Robin Wendel, and Bernhard Zagel. 2016.
+{``Mapping Bicycle Crash Risk Patterns on the Local Scale.''}
+\emph{Safety} 2 (3): 17. \url{https://doi.org/10.3390/safety2030017}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-lovelace2019}{}}%
+Lovelace, Robin, Jakub Nowosad, and Jannes Muenchow. 2019.
+\emph{Geocomputation with r}. Chapman; Hall/CRC.
+\url{https://doi.org/10.1201/9780203730058}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-lu2014gwmodel}{}}%
 Lu, Binbin, Paul Harris, Martin Charlton, and Chris Brunsdon. 2014.
@@ -10784,6 +11138,12 @@ Multilevel Modelling, Centre for. n.d. {``Introduction to Multilevel
 Modelling.''} n.d.
 \url{http://www.bristol.ac.uk/cmm/learning/online-course/course-topics.html\#m04}.
 
+\leavevmode\vadjust pre{\hypertarget{ref-niedomysl2011}{}}%
+Niedomysl, Thomas. 2011. {``How Migration Motives Change over Migration
+Distance: Evidence on Variation Across Socio-Economic and Demographic
+Groups.''} \emph{Regional Studies} 45 (6): 843--55.
+\url{https://doi.org/10.1080/00343401003614266}.
+
 \leavevmode\vadjust pre{\hypertarget{ref-onnerfors2019eurostat}{}}%
 Önnerfors, Åsa, Mariana Kotzeva, Teodóra Brandmüller, et al. 2019.
 {``Eurostat Regional Yearbook 2019 Edition.''}
@@ -10791,6 +11151,20 @@ Modelling.''} n.d.
 \leavevmode\vadjust pre{\hypertarget{ref-openshaw1981modifiable}{}}%
 Openshaw, Stan. 1981. {``The Modifiable Areal Unit Problem.''}
 \emph{Quantitative Geography: A British View}, 60--69.
+
+\leavevmode\vadjust pre{\hypertarget{ref-patias2021}{}}%
+Patias, Nikos, Francisco Rowe, and Dani Arribas-Bel. 2021.
+{``Trajectories of Neighbourhood Inequality in Britain: Unpacking
+Inter{-}Regional Socioeconomic Imbalances, 1971{-}2011.''} \emph{The
+Geographical Journal} 188 (2): 150--65.
+\url{https://doi.org/10.1111/geoj.12420}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-patias2019}{}}%
+Patias, Nikos, Francisco Rowe, and Stefano Cavazzi. 2019. {``A Scalable
+Analytical Framework for Spatio-Temporal Analysis of Neighborhood
+Change: A Sequence Analysis Approach.''} In, 223--41. Springer
+International Publishing.
+\url{https://doi.org/10.1007/978-3-030-14745-7_13}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-pebesma2012spacetime}{}}%
 Pebesma, Edzer et al. 2012. {``Spacetime: Spatio-Temporal Data in r.''}
@@ -10805,9 +11179,44 @@ press.
 Robinson, WS. 1950. {``Ecological Correlations and Individual
 Behavior.''} \emph{American Sociological Review} 15 (195): 351--57.
 
+\leavevmode\vadjust pre{\hypertarget{ref-rowe2022a}{}}%
+Rowe, Francisco. 2022. {``Introduction to Geographic Data Science.''}
+\emph{Open Science Framework}, August.
+\url{https://doi.org/10.17605/OSF.IO/VHY2P}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-rowe2022}{}}%
+Rowe, Francisco, Robin Lovelace, and Adam Dennett. 2022. {``Spatial
+Interaction Modelling: A Manifesto.''}
+\url{http://dx.doi.org/10.31219/osf.io/xcdms}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-rowe2020}{}}%
+Rowe, Francisco, and Nikos Patias. 2020. {``Mapping the Spatial Patterns
+of Internal Migration in Europe.''} \emph{Regional Studies, Regional
+Science} 7 (1): 390--93.
+\url{https://doi.org/10.1080/21681376.2020.1811139}.
+
 \leavevmode\vadjust pre{\hypertarget{ref-gds_ua17}{}}%
 Singleton, Alex. 2017. {``Geographic Data Science for Urban
 Analytics.''} \url{http://www.alex-singleton.com/GDS_UA_2017/}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-singleton2013}{}}%
+Singleton, Alexander D., and Seth E. Spielman. 2013. {``The Past,
+Present, and Future of Geodemographic Research in the United States and
+United Kingdom.''} \emph{The Professional Geographer} 66 (4): 558--67.
+\url{https://doi.org/10.1080/00330124.2013.848764}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-stillwell2018}{}}%
+Stillwell, John, Konstantinos Daras, and Martin Bell. 2018. {``Spatial
+Aggregation Methods for Investigating the MAUP Effects in Migration
+Analysis.''} \emph{Applied Spatial Analysis and Policy} 11 (4):
+693--711. \url{https://doi.org/10.1007/s12061-018-9274-6}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-tao2018}{}}%
+Tao, Sui, Jonathan Corcoran, Francisco Rowe, and Mark Hickman. 2018.
+{``To Travel or Not to Travel: {`}Weather{'} Is the Question. Modelling
+the Effect of Local Weather Conditions on Bus Ridership.''}
+\emph{Transportation Research Part C: Emerging Technologies} 86
+(January): 147--67. \url{https://doi.org/10.1016/j.trc.2017.11.005}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-wheeler2005multicollinearity}{}}%
 Wheeler, David, and Michael Tiefelsdorf. 2005. {``Multicollinearity and
@@ -10821,6 +11230,13 @@ Wikle, Christopher K, Andrew Zammit-Mangion, and Noel Cressie. 2019.
 
 \leavevmode\vadjust pre{\hypertarget{ref-envs450_2018}{}}%
 Williamson, Paul. 2018. {``Survey Analysis.''}
+
+\leavevmode\vadjust pre{\hypertarget{ref-wolf2020}{}}%
+Wolf, Levi John, Sean Fox, Rich Harris, Ron Johnston, Kelvyn Jones,
+David Manley, Emmanouil Tranos, and Wenfei Winnie Wang. 2020.
+{``Quantitative Geography III: Future Challenges and Challenging
+Futures.''} \emph{Progress in Human Geography} 45 (3): 596--608.
+\url{https://doi.org/10.1177/0309132520924722}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-Xie_et_al_2019_book}{}}%
 Xie, Yihui, JJ Allaire, and Garrett Grolemund. 2019. \emph{R Markdown:
