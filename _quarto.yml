@@ -29,14 +29,29 @@ book:
 
   chapters:
     - index.qmd
+    - preamble.qmd
     - part: "Part 1"
       chapters:
-      - 01-overview.qmd
-      - 02-spatial_data.qmd
+      - 01-embedding-space.qmd
+      - 02-spatial-data-wrangling.qmd
     - part: "Part 2"
       chapters:
-      - 03-data_wrangling.qmd
+      - 03-points.qmd
+      - 04-spatial-interaction-model.qmd
+      - 05-spatial-dependence.qmd
+    - part: "Part 3"
+      chapters:   
+      - 06-spatial-heterogeneity.qmd
+      - 07-multilevel-modelling,qmd
+      - 08-weighted-regression-modelling.qmd
+    - part: "Part 4"
+      chapters:   
+      - 09-spatio-temporal-wrangling.qmd
+      - 10-spatio-temporal-modelling.qmd
+      - 11-spatial-machine-learning.qmd
    # appendices:
+    - platform.qmd
+    - data.qmd
     - references.qmd
 
   sharing: [twitter, facebook]
