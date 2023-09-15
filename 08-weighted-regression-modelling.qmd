@@ -1,4 +1,4 @@
-# Geographically weighted regression modelling
+# Geographically weighted regression
 
 This chapter provides an introduction to geographically weighted regression models.
 
