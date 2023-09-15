@@ -1,7 +1,27 @@
 # Framing this book
 
-Vision of the book
+## Aim / vision and content of book
 
 -   Focus on intuition and application of spatial data analysis and modelling
 
 -   Fit into the broader ecosystem
+
+## How we have written
+
+- open book 
+
+- reproducible
+
+- why R
+
+## Who is this book for
+
+- For data scientists 
+
+- For social scientists 
+
+- Language we use to reach these audiences
+
+- Graduate level
+
+## How this book fits within the broader spatial data analysis ecosystem
