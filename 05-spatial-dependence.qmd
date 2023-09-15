@@ -1,4 +1,18 @@
-# Spatial dependence
+---
+title: Spatial dependence
+jupyter:
+  jupytext:
+    text_representation:
+      extension: .qmd
+      format_name: quarto
+      format_version: '1.0'
+      jupytext_version: 1.14.5
+  kernelspec:
+    display_name: R
+    language: R
+    name: ir
+---
+
 
 This chapter is based on the following references, which are good follow-up's on the topic:
 
@@ -11,7 +25,8 @@ This chapter is based on the following references, which are good follow-up's on
 
 We will rely on the following libraries in this section, all of them included in @sec-dependencies:
 
-```{r results='hide', message = FALSE}
+
+```{r}
 # Layout
 library(tufte)
 # For pretty table
@@ -108,96 +123,6 @@ Spatial regression is about *explicitly* introducing space or geographical conte
 
 Spatial regression is a large field of development in the econometrics and statistics literature. In this brief introduction, we will consider two related but very different processes that give rise to spatial effects: spatial heterogeneity and spatial dependence. For more rigorous treatments of the topics introduced here, the reader is referred to @anselin2003spatial, @anselin2014modern, and @gibbons2014spatial.
 
-## Spatial heterogeneity
-
-Spatial heterogeneity (SH) arises when we cannot safely assume the process we are studying operates under the same "rules" throughout the geography of interest. In other words, we can observe SH when there are effects on the outcome variable that are intrinsically linked to specific locations. A good example of this is the case of seafront houses above: we are trying to model the price of a house and, the fact some houses are located under certain conditions (i.e. by the sea), makes their price behave differently. This somewhat abstract concept of SH can be made operational in a model in several ways. We will explore the following two: spatial fixed-effects (FE); and spatial regimes, which is a generalization of FE.
-
-**Spatial FE**
-
-Let us consider the house price example from the previous section to introduce a more general illustration that relates to the second motivation for spatial effects ("space as a proxy"). Given we are only including two explanatory variables in the model, it is likely we are missing some important factors that play a role at determining the price at which a house is sold. Some of them, however, are likely to vary systematically over space (e.g. different neighborhood characteristics). If that is the case, we can control for those unobserved factors by using traditional dummy variables but basing their creation on a spatial rule. For example, let us include a binary variable for every neighbourhood, as provided by AirBnB, indicating whether a given house is located within such area (`1`) or not (`0`). Neighbourhood membership is expressed on the `neighborhood` column:
-
-```{r}
-db %>%
-  ggplot(aes(color = neighborhood)) +
-  geom_sf() + 
-  theme_void()
-```
-
-Mathematically, we are now fitting the following equation:
-
-$$
-\log(P_i) = \alpha_r + \beta_1 Acc_i + \beta_2 Bath_i + \beta_3 Bedr_i + \beta_4 Beds_i + \epsilon_i
-$$
-
-where the main difference is that we are now allowing the constant term, $\alpha$, to vary by neighbourhood $r$, $\alpha_r$.
-
-Programmatically, we can fit this model with `lm`:
-
-```{r}
-# Include `-1` to eliminate the constant term and include a dummy for every area
-m2 <- lm(
-  'log_price ~ neighborhood + accommodates + bathrooms + bedrooms + beds - 1', 
-  db
-)
-summary(m2)
-```
-
-Econometrically speaking, what the postcode FE we have introduced imply is that, instead of comparing all house prices across San Diego as equal, we only derive variation from *within* each postcode. In our particular case, estimating spatial FE in our particular example also gives you an indirect measure of area *desirability*: since they are simple dummies in a regression explaining the price of a house, their estimate tells us about how much people are willing to pay to live in a given area. We can visualise this "geography of desirability" by plotting the estimates of each fixed effect on a map:
-
-```{r}
-# Extract neighborhood names from coefficients
-nei.names <- m2$coefficients %>%
-  as.data.frame() %>%
-  row.names() %>%
-  str_replace("neighborhood", "")
-# Set up as Data Frame
-nei.fes <- data.frame(
-  coef = m2$coefficients,
-  nei = nei.names,
-  row.names = nei.names
-) %>%
-  right_join(
-    db, by = c("nei" = "neighborhood")
-)
-# Plot
-nei.fes %>%
-  st_as_sf() %>%
-  ggplot(aes(color = coef)) +
-  geom_sf() +
-  scale_color_viridis_c() +
-  theme_void()
-```
-
-We can see how neighborhoods in the left (west) tend to have higher prices. What we can't see, but it is represented there if you are familiar with the geography of San Diego, is that the city is bounded by the Pacific ocean on the left, suggesting neighbourhoods by the beach tend to be more expensive.
-
-Remember that the interpretation of a $\beta_k$ coefficient is the effect of variable $k$, *given all the other explanatory variables included remain constant*. By including a single variable for each area, we are effectively forcing the model to compare as equal only house prices that share the same value for each variable; in other words, only houses located within the same area. Introducing FE affords you a higher degree of isolation of the effects of the variables you introduce in your model because you can control for unobserved effects that align spatially with the distribution of the FE you introduce (by neighbourhood, in our case).
-
-**Spatial regimes**
-
-At the core of estimating spatial FEs is the idea that, instead of assuming the dependent variable behaves uniformly over space, there are systematic effects following a geographical pattern that affect its behaviour. In other words, spatial FEs introduce econometrically the notion of spatial heterogeneity. They do this in the simplest possible form: by allowing the constant term to vary geographically. The other elements of the regression are left untouched and hence apply uniformly across space. The idea of spatial regimes (SRs) is to generalize the spatial FE approach to allow not only the constant term to vary but also any other explanatory variable. This implies that the equation we will be estimating is: $$
-\log(P_i) = \alpha_r + \beta_{1r} Acc_i + \beta_{2r} Bath_i + \beta_{3r} Bedr_i + \beta_{4r} Beds_i + \epsilon_i
-$$
-
-where we are not only allowing the constant term to vary by region ($\alpha_r$), but also every other parameter ($\beta_{kr}$).
-
-Also, given we are going to allow *every* coefficient to vary by regime, we will need to explicitly set a constant term that we can allow to vary:
-
-```{r}
-db$one <- 1
-```
-
-Then, the estimation leverages the capabilities in model description of R formulas:
-
-```{r}
-# `:` notation implies interaction variables
-m3 <- lm(
-  'log_price ~ 0 + (accommodates + bathrooms + bedrooms + beds):(neighborhood)', 
-  db
-)
-summary(m3)
-```
-
-This allows us to get a separate constant term and estimate of the impact of each variable *for every neighborhood*
 
 ## Spatial dependence
 
@@ -380,5 +305,3 @@ $$
 4.  Fit a model that augments the baseline in 1. with the spatial lag of a variable you consider interesting. Motivate this choice. Note that to complete this, you will need to also generate a spatial weights matrix.
 
 In each instance, provide a brief interpretation (no more thana few lines for each) that demonstrates your understanding of theunderlying concepts behind your approach. <!-- #endregion -->
-
-
